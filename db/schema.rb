@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20161130221803) do
     t.string  "session_token",                null: false
     t.integer "points",          default: 0
     t.json    "prizes",          default: [],              array: true
-    t.string  "settings"
+    t.hstore  "settings",        default: {}
   end
 
 end

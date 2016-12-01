@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :session_token, null: false
       t.integer :points, default: 0
       t.json :prizes, array: true, default: []
-      t.hstore :settings, default: {}
+      t.string :settings
     end
   end
 end

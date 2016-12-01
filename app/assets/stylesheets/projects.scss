@@ -1,0 +1,132 @@
+$bronze: #CEAA78;
+$darkbronze: darken($bronze, 50%);
+$lightbronze: lighten($bronze, 20%);
+$blue: #133359;
+$filter: transparentize($bronze, .8);
+$font: 'Dancing Script', cursive;
+$serif: 'Vesper Libre', serif;
+
+#projects {
+  text-align: center;
+  color: $bronze;
+  background: $filter;
+  h1 {
+    font-size: 8vh;
+    line-height: 12vh;
+    color: $blue;
+    font-family: $font;
+  }
+  h2 {
+    font-size: 5vh;
+    line-height: 14vh;
+    font-family: 'Oregano', cursive;
+    font-weight: normal;
+  }
+  h3 {
+    font-size: 4vh;
+    font-family: $serif;
+  }
+  ul {
+  width: 1200px;
+  margin: 20px auto;
+  display: block;
+  background: $bronze;
+  border-radius: 4px;
+  height: 400px;
+  padding: 20px;
+  overflow-y: scroll;
+  font-family: $font;
+    li {
+      background: $blue;
+      color: $bronze;
+      width: 260px;
+      height: 150px;
+      display: block;
+      float: left;
+      margin: 10px;
+      padding: 5px;
+      border-radius: 4px;
+      transition: background 1s, color 1.5s;
+    }
+    li:hover {
+      color: $lightbronze;
+      background: $darkbronze;
+    }
+  }
+  button {
+    margin: auto;
+    width: 16vw;
+    height: 10vh;
+    float: none;
+    font-size: 5vh;
+    color: $bronze;
+    text-align: center;
+    background-color: $blue;
+  }
+  button:hover {
+    background: $darkbronze;
+    color: $lightbronze;
+  }
+}
+
+#detail {
+  height: 100%;
+  padding-bottom: 2.5vh;
+  background-color: $filter;
+  h1 {
+    color: transparent;
+    text-align: center;
+  }
+  #holder{
+    height: 80%;
+    width: 80%;
+    padding: 4%;
+    display: block;
+    margin: 3% auto;
+    background-color: $blue;
+    border-radius: 2%;
+    box-shadow: 4px 6px 2px black, -4px 0px 2px black;
+  }
+  textarea {
+    display: block;
+    background-color: $bronze;
+    width: 80%;
+    float: left;
+    font-size: 24px;
+    height: 53.5vh;
+    overflow-y: scroll;
+    box-shadow: inset 3px 3px 2px black;
+    padding: 2%;
+  }
+  #buttons {
+    float: right;
+    background-color: $bronze;
+    box-shadow: inset 3px 3px 2px black;
+    height: 100%;
+    width: 16%;
+    margin-left: 4%;
+    color: inherit;
+    button {
+      margin: 6% auto;
+      height: 12%;
+      float: none;
+      width: 100%;
+      background-color: transparentize($darkbronze, .5);
+      text-align: center;
+      font-size: 36px;
+      box-shadow: inset 3px 0px 2px black;
+      color: $bronze;
+      border-radius: 0;
+      transition: background 1s;
+    }
+    button:hover {
+      background: transparentize($darkbronze, .2);
+    }
+    section {
+      margin: 25% auto 102.5% auto;
+      text-align: center;
+      font-size: 48px;
+    }
+  }
+
+}

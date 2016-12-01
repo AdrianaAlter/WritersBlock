@@ -1,0 +1,130 @@
+$bronze: #CEAA78;
+$blue: #133359;
+$darkbronze: darken($bronze, 50%);
+$lightbronze: lighten($bronze, 20%);
+$lightblue: #35597B;
+$font: 'Dancing Script', cursive;
+$serif: 'Vesper Libre', serif;
+
+#prize-store {
+  background-color: transparentize($blue, .1);
+  height: 89.4vh;
+  padding-bottom: 4vh;
+  overflow-y: scroll;
+}
+#prize-store button, #settings button {
+  float: none;
+  width: 16vw;
+  height: 10vh;
+  margin: auto;
+  font-size: 5vh;
+  color: $darkbronze;
+  transition: background 1s, color 1s;
+  text-align: center;
+  background-color: $bronze;
+}
+#prize-store button:hover, #settings button:hover {
+  background: $darkbronze;
+  color: $lightbronze;
+}
+#prize-store h1, #settings h1 {
+  color: $bronze;
+  text-align: center;
+  font-size: 8vh;
+  margin-top: 2vh;
+  font-family: $font;
+}
+.category {
+  .cat-list {
+    border-radius: 0 0 1vh 1vh;
+    background-color: transparentize($bronze, .1);
+    width: 90%;
+    margin: 0 auto 4vh auto;
+    height: 100px;
+    list-style: none;
+    padding: 1vh 2vh;
+    overflow-y: scroll;
+  }
+  .cat-header {
+    font-family: 'Oregano', cursive;
+    font-weight: normal;
+    border-radius: 1vh 1vh 0 0;
+    width: 90%;
+    height: 6vh;
+    margin: 2vh auto 0 auto;
+    background-color: $darkbronze;
+    font-size: 2.5vh;
+    letter-spacing: .1vw;
+
+    h2 {
+      display: inline;
+      margin: 0 1vw;
+      line-height: 6vh;
+      padding: 0;
+      width: 5vw;
+      color: $lightbronze;
+    }
+
+    .cat-name {
+      float: 1eft;
+    }
+    .cat-price {
+      float: right;
+    }
+  }
+
+}
+
+
+.prize {
+  color: $bronze;
+  border-radius: 10%;
+  border: 1vh solid transparentize($lightbronze, .1);
+  text-align: center;
+  line-height: 10vh;
+  font-size: 20px;
+  list-style: none;
+  background-color: $blue;
+  cursor: pointer;
+  float: left;
+  margin: 1vh;
+  height: 12vh;
+  width: 12vh;
+  background-size: contain;
+  position: relative;
+}
+.prize:hover {
+  box-shadow: 1px 1px 2px $darkbronze;
+}
+.locked {
+  opacity: .7;
+}
+.locked:hover, .bought:hover {
+  box-shadow: none;
+}
+.bought, .locked {
+  cursor: default;
+}
+.bought:before {
+  content: "OWNED";
+  text-shadow: 1px 1px 1px $darkbronze;
+  color: $blue;
+  font-size: 2.5vh;
+  line-height: 11vh;
+  text-align: center;
+  font-family: serif !important;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 50px;
+  background: transparentize($lightbronze, .2);
+  left: 0%;
+}
+#settings {
+  .selected {
+    border-color: $darkbronze;
+  }
+  .cat-list {
+    font-family: $serif;
+  }
+}

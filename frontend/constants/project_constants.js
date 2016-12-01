@@ -1,0 +1,6 @@
+var ProjectConstants = {
+  ALL_PROJECTS_RECEIVED: "ALL_PROJECTS_RECEIVED",
+  SINGLE_PROJECT_RECEIVED: "SINGLE_PROJECT_RECEIVED"
+};
+
+module.exports = ProjectConstants;

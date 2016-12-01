@@ -1,0 +1,351 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ * {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  background: transparent;
+  box-sizing: border-box;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  background-size: contain;
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+ button {
+   display: block;
+   float: right;
+   margin-right: 20px;
+   outline: none;
+   border: none;
+   height: 50px;
+   width: 80px;
+   font-size: 16px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background 1s, color 1s;
+   font-family: 'Oregano', cursive;
+ }
+
+ button:hover {
+   background: #342613;
+ }
+
+ header {
+   width: 100%;
+   height: 10%;
+   padding: 10px;
+   background: #CEAA78;
+ }
+
+ header h1 {
+   margin: 0 !important;
+   display: block;
+   float: left;
+   height: 6vh;
+   color: #342613;
+   width: 16vw;
+   font-family: 'Dancing Script', cursive;
+ }
+
+ header button {
+   background: #133359;
+   text-align: center;
+   font-size: 3vh;
+   color: #CEAA78;
+ }
+
+ #point-count:hover{
+   background: #133359;
+   color: #CEAA78;
+   cursor: default;
+ }
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: transparent;
+
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(52, 38, 19, 0.5);
+}
+::-webkit-scrollbar-button {
+  background-color: transparent;
+
+}
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+
+
+
+
+.leopard {
+  background-image: url('http://orig03.deviantart.net/ba5d/f/2013/257/b/0/seamless_leopard_prints_photoshop_pattern_by_pantaeba-d6mch55.png');
+}
+.blue-leopard {
+  background-image: url('https://t3.ftcdn.net/jpg/01/26/65/24/240_F_126652452_ReOkGKi2E7sieRbsubweV92T6GAy84VP.jpg');
+}
+.zebra {
+   background-image: url('http://data.whicdn.com/images/93513121/original.png');
+}
+.snake {
+  background-image: url('https://t3.ftcdn.net/jpg/01/07/72/94/240_F_107729446_Lw5ktZncenGmFjXdaAtwOQtab9F0dqyp.jpg');
+}
+.black-damask {
+  background-image: url('http://i691.photobucket.com/albums/vv277/Art-of-Alteration/CSS%20Stuff/vector-seamless-damask-pattern-thum.jpg');
+}
+.metal1 {
+  background-image: url('http://img05.deviantart.net/286e/i/2011/343/f/b/seamless_metal_plate_by_hhh316-d4ink0a.jpg');
+}
+.whitelace {
+  background-image: url('https://www.colourbox.com/preview/11473022-lace-seamless-pattern-with-flowers.jpg');
+}
+.red-velvet {
+  background-image: url('http://www.socialh.com/wp-content/uploads/2013/04/AOPT24.jpg');
+}
+.grey-damask {
+  background-image: url('http://www.sketchuptextureclub.com/public/texture_m/0002-ramage-floral-wallpaper-dhea-by-parato-texture-seamless-bump.jpg');
+}
+.purple-damask {
+  background-image: url('http://images.all-free-download.com/images/graphiclarge/seamless_floral_background_vector_148132.jpg');
+}
+.red-rug {
+  background-image: url('http://www.commentnation.com/backgrounds/images/oriental_rug_red_seamless_carpet_background_tileable.jpg');
+}
+.green-damask {
+  background-image: url('http://images.all-free-download.com/images/graphicthumb/vector_green_seamless_pattern_background_531597.jpg');
+}
+.red-damask {
+  background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_red_and_black.jpg');
+}
+.blue-damask {
+  background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_baby_blue.jpg');
+}
+.pink-damask {
+  background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_pink.jpg');
+}
+.gold-damask {
+  background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_gold_and_black.jpg');
+}
+.red-roses {
+  background-image: url('http://www.commentnation.com/backgrounds/images/red_abstract_flowers_background_texture_tiled.jpg');
+}
+.parchment {
+  background-image: url('http://www.stockvault.net/data/2011/03/19/118895/preview16.jpg');
+  background-size: cover;
+}
+.tiger {
+  background-image: url('http://freedesignfile.com/upload/2015/08/Animal-fur-texture-seamless-pattern-vector-15.jpg');
+}
+.diamonds {
+  background-image: url('http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/824/thumbs/grungy-fiery-red-seamless-patterns-3.jpg');
+}
+.green-circuit {
+  background-image: url('http://colourlovers.com.s3.amazonaws.com/images/patterns/3100/3100507.png');
+  background-size: contain;
+}
+.black-circuit {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/af/6d/52/af6d5228b42a6769cccaed3c96e07ec9.jpg');
+}
+.gold-roses {
+  background-image: url('http://freedesignfile.com/upload/2013/06/Seamless-pattern-3.jpg');
+}
+.green-stripes {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/736x/ac/35/79/ac3579cb4abaa693fba2c38a562f15d4.jpg');
+}
+.green-tiles {
+  background-image: url('http://colourlovers.com.s3.amazonaws.com/images/patterns/3518/3518825.png');
+  background-size: contain;
+}
+.birds {
+  background-image: url('http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0510/7764/rRavenclaw_Pattern_shop_thumb.png');
+}
+.maze {
+  background-image: url('http://textures101.com/textures/Paper/Wallpaper/2011/10/10/tn1_4893051426b62fa08ebfo_zxjfx.jpg');
+}
+.math {
+  background-image: url('https://cdn.vectorstock.com/i/composite/22,24/math-seamless-pattern-background-notebook-vector-9152224.jpg');
+}
+.constellations {
+  background-image: url('https://static1.squarespace.com/static/507698a2e4b07864e5d06dea/t/52624f2be4b0c5267bb3675f/1382174512271/pattern-repeat-sketch-starrysky.jpg');
+}
+.fractal {
+  background-image: url('https://www.colourbox.com/preview/16003713-purple-abstract-seamless-fractal-pattern.jpg');
+}
+
+
+
+.red-floral {
+  background-image: url('http://www.commentnation.com/backgrounds/images/abstract_red_floral_wallpaper_background_seamless.jpg');
+}
+.mauve-floral {
+  background-image: url('http://www.commentnation.com/backgrounds/images/abstract_mauve_floral_wallpaper_background_seamless.jpg');
+}
+.brown-floral {
+  background-image: url('http://www.commentnation.com/backgrounds/images/abstract_brown_floral_wallpaper_background_seamless.jpg');
+}
+.green-floral {
+  background-image: url('http://www.commentnation.com/backgrounds/images/abstract_green_floral_wallpaper_background_seamless.jpg');
+}
+.rainbow-scales {
+  background-image: url('http://www.commentnation.com/backgrounds/images/colorful_abstract_diamonds_background_tiled.jpg');
+}
+.wood {
+  background-image: url('http://www.myfreetextures.com/wp-content/uploads/2014/10/texture-seamless-wood-5.jpg');
+}
+.silver {
+  background-image: url('http://previews.123rf.com/images/marabudesign/marabudesign1503/marabudesign150300009/37235394-Aluminum-Foil-Seamless-and-Tileable-Texture-Stock-Photo.jpg');
+}
+.bronze {
+  background-image: url('http://images.naldzgraphics.net/2014/08/1-old-rusty-texture.jpg');
+}
+.gold {
+  background-image: url('https://slm-assets1.secondlife.com/assets/4491071/lightbox/-KnA-%20Gold%20brushed.jpg?1319657278');
+}
+.copper {
+  background-image: url('http://www.myfreetextures.com/wp-content/uploads/2014/10/brushed-copper-texture.jpg');
+}
+.lava {
+  background-image: url('http://www.commentnation.com/backgrounds/images/abstract_red_wallpaper_background_seamless.jpg');
+}
+.leather {
+  background-image: url('http://www.texturemate.com/sites/default/files/images/Free%20Texture%20Sorensen%20Leather%2003-03-2014%2000266%20-%20Sorensen%20Leather%20-%20Winchester-cognac-40724.preview.jpg');
+}
+.alligator {
+  background-image: url('http://previews.123rf.com/images/alliedcomputergraphics/alliedcomputergraphics1206/alliedcomputergraphics120600873/14063485-Alligator-Hide-Seamless-Texture-Tile-Stock-Photo-seamless-crocodile-skin.jpg');
+}
+.quilted {
+  background-image: url('https://cdn.vectorstock.com/i/thumb-large/89/11/6618911.jpg');
+}
+.marble {
+  background-image: url('http://www.stockvault.net/data/2012/02/29/129670/preview16.jpg');
+}
+.marble2 {
+  background-image: url('http://www.sketchuptextureclub.com/public/slider/marble-collection.jpg');
+}
+.blue-marble {
+  background-image: url('http://2.bp.blogspot.com/-qqIfPnBHA64/UmpPlFoaHgI/AAAAAAAAE24/xf3QBB5F_zY/s1600/Tileable+marble+floor+tile+texture+(9).jpg');
+}
+.rose-quartz {
+  background-image: url('http://img05.deviantart.net/113a/i/2009/322/b/5/rose_quartz_seamless_texture_by_suztv.jpg');
+}
+.metal-swirl {
+  background-image: url('http://img12.deviantart.net/7d87/i/2014/049/5/6/metal_seamless_texture_18_by_jojo_ojoj-d773szm.jpg');
+}
+.embossed-swirl {
+  background-image: url('http://img02.deviantart.net/7bc5/i/2015/111/2/f/metal_seamless_texture_43_by_jojo_ojoj-d8qm8o9.jpg');
+}
+.embossed-copper {
+  background-image: url('http://pre05.deviantart.net/bf98/th/pre/i/2015/252/e/e/metal_seamless_texture_65_by_jojo_ojoj-d98yna4.jpg');
+}
+.mosaic {
+  background-image: url('http://www.commentnation.com/backgrounds/images/black_and_white_mosaic_tile_background_texture.jpg');
+}
+.green-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/forest_green_glue_chip_glass_background_seamless_texture.jpg');
+}
+.black-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/black_glue_chip_glass_background_seamless_texture.jpg');
+}
+.broken-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/broken_glass_seamless_pattern.jpg');
+}
+.red-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/red_glue_chip_glass_background_seamless_texture.jpg');
+}
+.purple-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/purple_glue_chip_glass_background_seamless_texture.jpg');
+}
+.amber-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/amber_glue_chip_glass_background_seamless_texture.jpg');
+}
+.gold-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/sepia_glue_chip_glass_background_seamless_texture.jpg');
+}
+.magenta-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/magenta_glue_chip_glass_background_seamless_texture.jpg');
+}
+.pink-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/pink_glue_chip_glass_background_seamless_texture.jpg');
+}
+.blue-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/cobalt_blue_glue_chip_glass_background_seamless_texture.jpg');
+}
+.clear-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/glue_chip_glass_background_seamless_texture.jpg');
+}
+.ice-cubes {
+  background-image: url('http://www.commentnation.com/backgrounds/images/seamless_ice_cubes.jpg');
+}
+.leopard-fur {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/564x/71/30/a5/7130a5554291fe76076e7d5be745fcb4.jpg');
+}
+.black-swirl {
+  background-image: url('http://freedesignfile.com/upload/2015/05/Black-paper-floral-seamless-pattern-vector.jpg');
+}
+
+
+.chalkboard {
+  background-image: url('http://www.wintersetwebsites.com/wp-content/uploads/2016/01/Scratchy-Chalkboard-Texture.jpg');
+  background-size: cover;
+}
+.scroll {
+  background-image: url('http://www.commentnation.com/backgrounds/images/tan_marbled_paper_background_texture_seamless.jpg');
+}
+.papyrus {
+  background-image: url('http://img0.mxstatic.com/wallpapers/2b8aca986c77811c824a2bd8ad9f9ddc_large.jpeg');
+  background-size: cover;
+}
+.pink-paper {
+  background-image: url('http://www.zingerbug.com/Backgrounds/background_images/pink_parchment_paper_wallpaper_texture_seamless.jpg');
+}
+.red-paper {
+  background-image: url('http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/1191/full/deep-crimson-red-seamless-grunge-textures-16.jpg');
+}
+.gold-paper {
+  background-image: url('http://www.commentnation.com/backgrounds/images/gold_paper_texture_background_seamless_pattern.jpg');
+}
+.blue-paper {
+  background-image: url('http://www.commentnation.com/backgrounds/images/blue_paper_texture_background_seamless_pattern.jpg');
+}
+.slate {
+  background-image: url('https://c2.staticflickr.com/6/5164/5290154654_4d8949fb71_z.jpg');
+}
+.vellum {
+  background-image: url('http://www.tutorialchip.com/wp-content/uploads/2011/07/Old-Paper-Texture-520x346.jpg');
+  background-size: cover;
+}
+.purple-paper {
+  background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/01/Blue-Purple-Construction-Paper-Texture..jpg');
+  background-size: cover;
+}
+.graph-paper {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/00/7f/0b/007f0b700e78706f35078ac48bdba9cb.jpg');
+}
+.blackboard {
+  background-image: url('http://www.sketchuptextureclub.com/public/texture_m/0001-blackboard-texture-seamless.jpg');
+}

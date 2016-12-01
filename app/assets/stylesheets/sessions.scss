@@ -1,0 +1,96 @@
+$bronze: #CEAA78;
+$blue: #133359;
+$darkbronze: darken($bronze, 50%);
+$lightbronze: lighten($bronze, 20%);
+$font: 'Dancing Script', cursive;
+$serif: 'Vesper Libre', serif;
+
+#welcome {
+  background: $bronze;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+
+  div {
+    border: 1px solid transparent;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+  }
+}
+
+.welcome-buttons {
+  width: 36vw;
+  margin: 10vh auto;
+  font-family: $font;
+  button {
+    float: left;
+    width: 16vw;
+    height: 10vh;
+    margin: 0 !important;
+    font-size: 5vh;
+    color: $bronze;
+    text-align: center;
+    background-color: $blue;
+  }
+  .left {
+    margin-right: 3.84vw !important;
+  }
+  button:hover {
+    background: $darkbronze;
+    color: $lightbronze;
+  }
+}
+
+#welcome h1 {
+  color: $blue;
+  font-size: 10vh;
+  margin-top: 20vh;
+  font-family: $font;
+  text-align: center;
+}
+
+
+form {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border: 2vw ridge $bronze;
+  box-shadow: inset 1.25vh 1.25vh 1vh darken($bronze, 50%);
+  padding: 5vh;
+  background: $bronze;
+
+  h1 {
+    margin: 2vh 0;
+    color: $blue;
+    font-size: 10vh;
+    font-family: $font;
+    text-align: center;
+  }
+  input, label {
+    display: block;
+    margin: auto;
+    font-family: 'Oregano', cursive;
+  }
+  label {
+    font-size: 4vh;
+    color: $blue !important;
+  }
+  input {
+    font-size: 5vh;
+    font-family: $serif;
+    color: $darkbronze;
+    height: 10vh;
+    width: 30vw;
+    padding-left: 1vw;
+    padding-top: 2vh;
+    border: .5vh solid $blue;
+    border-radius: 15%;
+    background: $bronze;
+    box-shadow: inset 1vh 1vh 1vh $darkbronze;
+  }
+  input:hover, input:active {
+    background: $lightbronze;
+  }
+}

@@ -25,14 +25,14 @@ var PrizeIndex = React.createClass({
   render: function(){
     var style = {
           overlay: {
-            background: 'transparent'
+            background: 'rgba(206, 170, 120, 0.8)'
           },
           content : {
             background: 'rgba(19, 51, 89, 1)',
-            top: '10vh',
-            left: '0',
-            right: '0',
-            bottom: '0'
+            top: '5vh',
+            left: '5vh',
+            right: '5vh',
+            bottom: '5vh'
           }
     };
     var self = this;
@@ -48,7 +48,7 @@ var PrizeIndex = React.createClass({
     return (
       <div>
         <button onClick={this.toggle}>Prizes</button>
-        <Modal style={style} isOpen={this.state.modalIsOpen}>
+        <Modal style={style} isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
           <div id="prize-store" className="group">
             <h1>All Prizes</h1>
             <ul>{categoryItems}</ul>

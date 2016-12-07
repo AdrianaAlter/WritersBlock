@@ -70,8 +70,8 @@ $serif: 'Vesper Libre', serif;
 }
 
 #detail {
-  height: 100%;
-  padding-bottom: 2.5vh;
+  height: 89vh;
+  padding-bottom: 1vh;
   background-color: $filter;
   h1 {
     color: transparent;
@@ -82,51 +82,51 @@ $serif: 'Vesper Libre', serif;
     width: 80%;
     padding: 4%;
     display: block;
-    margin: 3% auto;
+    margin: 2% auto 0 auto;
     background-color: $blue;
     border-radius: 2%;
     box-shadow: 4px 6px 2px black, -4px 0px 2px black;
+    textarea {
+      display: block;
+      background-color: $bronze;
+      width: 80%;
+      float: left;
+      font-size: 24px;
+      height: 100%;
+      overflow-y: scroll;
+      box-shadow: inset 3px 3px 2px black;
+      padding: 2%;
+    }
+    #buttons {
+      float: right;
+      background-color: $bronze;
+      box-shadow: inset 3px 3px 2px black;
+      height: 100%;
+      width: 16%;
+      margin-left: 4%;
+      color: inherit;
+      button {
+        margin: 3vh auto;
+        height: 12%;
+        float: none;
+        width: 100%;
+        background-color: transparentize($darkbronze, .5);
+        text-align: center;
+        font-size: 5vh;
+        box-shadow: inset 3px 0px 2px black;
+        color: $bronze;
+        border-radius: 0;
+        transition: background 1s;
+      }
+      button:hover {
+        background: transparentize($darkbronze, .2);
+      }
+      section {
+        margin: 25% auto 20vh auto;
+        text-align: center;
+        font-size: 8vh;
+      }
   }
-  textarea {
-    display: block;
-    background-color: $bronze;
-    width: 80%;
-    float: left;
-    font-size: 24px;
-    height: 54vh;
-    overflow-y: scroll;
-    box-shadow: inset 3px 3px 2px black;
-    padding: 2%;
-  }
-  #buttons {
-    float: right;
-    background-color: $bronze;
-    box-shadow: inset 3px 3px 2px black;
-    height: 100%;
-    width: 16%;
-    margin-left: 4%;
-    color: inherit;
-    button {
-      margin: 6% auto;
-      height: 12%;
-      float: none;
-      width: 100%;
-      background-color: transparentize($darkbronze, .5);
-      text-align: center;
-      font-size: 36px;
-      box-shadow: inset 3px 0px 2px black;
-      color: $bronze;
-      border-radius: 0;
-      transition: background 1s;
-    }
-    button:hover {
-      background: transparentize($darkbronze, .2);
-    }
-    section {
-      margin: 25% auto 102.5% auto;
-      text-align: center;
-      font-size: 48px;
-    }
   }
 
 }

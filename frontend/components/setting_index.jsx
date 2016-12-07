@@ -16,11 +16,15 @@ var SettingIndex = React.createClass({
   render: function(){
     var style = {
         overlay : {
-          backgroundColor: 'rgba(206, 170, 120, 0.4)'
+          backgroundColor: 'rgba(206, 170, 120, 0.3)'
         },
         content : {
-          background: 'rgba(19, 51, 89, 0.9)',
-          borderColor: 'transparent'
+          background: 'rgba(19, 51, 89, 0.8)',
+          borderColor: 'transparent',
+          top: '20vh',
+          left: '19vh',
+          right: '19vh',
+          bottom: '9vh'
         }
     };
     var self = this;

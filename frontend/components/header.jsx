@@ -8,7 +8,7 @@ var SettingIndex = require('./setting_index.jsx');
 var PrizeIndex = require('./prize_index.jsx');
 
 var Header = React.createClass({
-
+  contextTypes: { router: React.PropTypes.object.isRequired },
   getInitialState: function(){
     return { user: this.getStateFromStore() }
   },

@@ -3,7 +3,7 @@ var PrizeStore = require('../stores/prize_store.js');
 var SessionStore = require('../stores/session_store.js');
 var UserStore = require('../stores/user_store.js');
 var ApiUtil = require('../util/api_util.js');
-var Modal = require('react-modal');
+var Link = require('react-router').Link;
 var PrizeCategoryItem = require('./prize_category_item.jsx');
 
 var PrizeIndex = React.createClass({

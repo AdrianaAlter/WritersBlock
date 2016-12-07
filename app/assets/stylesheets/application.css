@@ -105,18 +105,23 @@
 
 .leopard {
   background-image: url('http://orig03.deviantart.net/ba5d/f/2013/257/b/0/seamless_leopard_prints_photoshop_pattern_by_pantaeba-d6mch55.png');
+  background-size: auto;
 }
 .blue-leopard {
   background-image: url('https://t3.ftcdn.net/jpg/01/26/65/24/240_F_126652452_ReOkGKi2E7sieRbsubweV92T6GAy84VP.jpg');
+  background-size: auto;
 }
 .zebra {
    background-image: url('http://data.whicdn.com/images/93513121/original.png');
+   background-size: auto;
 }
 .snake {
   background-image: url('https://t3.ftcdn.net/jpg/01/07/72/94/240_F_107729446_Lw5ktZncenGmFjXdaAtwOQtab9F0dqyp.jpg');
+  background-size: auto;
 }
 .black-damask {
   background-image: url('http://i691.photobucket.com/albums/vv277/Art-of-Alteration/CSS%20Stuff/vector-seamless-damask-pattern-thum.jpg');
+  background-size: auto;
 }
 .metal1 {
   background-image: url('http://img05.deviantart.net/286e/i/2011/343/f/b/seamless_metal_plate_by_hhh316-d4ink0a.jpg');
@@ -126,30 +131,39 @@
 }
 .red-velvet {
   background-image: url('http://www.socialh.com/wp-content/uploads/2013/04/AOPT24.jpg');
+  background-size: auto;
 }
 .grey-damask {
   background-image: url('http://www.sketchuptextureclub.com/public/texture_m/0002-ramage-floral-wallpaper-dhea-by-parato-texture-seamless-bump.jpg');
+  background-size: auto;
 }
 .purple-damask {
   background-image: url('http://images.all-free-download.com/images/graphiclarge/seamless_floral_background_vector_148132.jpg');
+  background-size: auto;
 }
 .red-rug {
   background-image: url('http://www.commentnation.com/backgrounds/images/oriental_rug_red_seamless_carpet_background_tileable.jpg');
+  background-size: auto;
 }
 .green-damask {
   background-image: url('http://images.all-free-download.com/images/graphicthumb/vector_green_seamless_pattern_background_531597.jpg');
+  background-size: auto;
 }
 .red-damask {
   background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_red_and_black.jpg');
+  background-size: auto;
 }
 .blue-damask {
   background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_baby_blue.jpg');
+  background-size: auto;
 }
 .pink-damask {
   background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_pink.jpg');
+  background-size: auto;
 }
 .gold-damask {
   background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_gold_and_black.jpg');
+  background-size: auto;
 }
 .red-roses {
   background-image: url('http://www.commentnation.com/backgrounds/images/red_abstract_flowers_background_texture_tiled.jpg');
@@ -163,6 +177,7 @@
 }
 .diamonds {
   background-image: url('http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/824/thumbs/grungy-fiery-red-seamless-patterns-3.jpg');
+  background-size: auto;
 }
 .green-circuit {
   background-image: url('http://colourlovers.com.s3.amazonaws.com/images/patterns/3100/3100507.png');
@@ -170,12 +185,15 @@
 }
 .black-circuit {
   background-image: url('https://s-media-cache-ak0.pinimg.com/originals/af/6d/52/af6d5228b42a6769cccaed3c96e07ec9.jpg');
+  background-size: auto;
 }
 .gold-roses {
   background-image: url('http://freedesignfile.com/upload/2013/06/Seamless-pattern-3.jpg');
+  background-size: auto;
 }
 .green-stripes {
   background-image: url('https://s-media-cache-ak0.pinimg.com/736x/ac/35/79/ac3579cb4abaa693fba2c38a562f15d4.jpg');
+  background-size: auto;
 }
 .green-tiles {
   background-image: url('http://colourlovers.com.s3.amazonaws.com/images/patterns/3518/3518825.png');
@@ -186,15 +204,109 @@
 }
 .maze {
   background-image: url('http://textures101.com/textures/Paper/Wallpaper/2011/10/10/tn1_4893051426b62fa08ebfo_zxjfx.jpg');
+  background-size: auto;
 }
 .math {
   background-image: url('https://cdn.vectorstock.com/i/composite/22,24/math-seamless-pattern-background-notebook-vector-9152224.jpg');
+  background-size: auto;
 }
 .constellations {
   background-image: url('https://static1.squarespace.com/static/507698a2e4b07864e5d06dea/t/52624f2be4b0c5267bb3675f/1382174512271/pattern-repeat-sketch-starrysky.jpg');
 }
 .fractal {
   background-image: url('https://www.colourbox.com/preview/16003713-purple-abstract-seamless-fractal-pattern.jpg');
+  background-size: auto;
+}
+.chess {
+  background-image: url('chess.gif');
+  background-size: auto;
+}
+.deco {
+  background-image: url('deco.jpg');
+  background-size: auto;
+}
+.regal {
+  background-image: url('regal.gif');
+}
+.woodcut {
+  background-image: url('woodcut.png');
+  background-size: auto;
+}
+.dark-square {
+  background-image: url('dark-square.gif');
+  background-size: auto;
+}
+.lava-rock {
+  background-image: url('lava-rock.gif');
+  background-size: auto;
+}
+.octo {
+  background-image: url('octo.gif');
+  background-size: auto;
+}
+.coffee {
+  background-image: url('coffee.gif');
+  background-size: auto;
+}
+.spain {
+  background-image: url('spain.gif');
+  background-size: auto;
+}
+.alexandria {
+  background-image: url('alexandria.gif');
+  background-size: auto;
+}
+.brooks {
+  background-image: url('brooks.gif');
+  background-size: auto;
+}
+.northern {
+  background-image: url('northern.gif');
+  background-size: auto;
+}
+.royal {
+  background-image: url('royal.gif');
+  background-size: auto;
+}
+.salvage {
+  background-image: url('salvage.gif');
+  background-size: auto;
+}
+.steadfast {
+  background-image: url('steadfast.gif');
+  background-size: auto;
+}
+.haunted {
+  background-image: url('haunted.gif');
+  background-size: auto;
+}
+.medallion {
+  background-image: url('medallion.gif');
+  background-size: auto;
+}
+.medusa {
+  background-image: url('medusa.gif');
+  background-size: auto;
+}
+.queen {
+  background-image: url('queen.gif');
+  background-size: auto;
+}
+.antoinette {
+  background-image: url('antoinette.gif');
+  background-size: auto;
+}
+.battle {
+  background-image: url('battle.gif');
+  background-size: auto;
+}
+.avalon {
+  background-image: url('avalon.gif');
+  background-size: auto;
+}
+.coaster {
+  background-image: url('coaster.gif');
+  background-size: auto;
 }
 
 

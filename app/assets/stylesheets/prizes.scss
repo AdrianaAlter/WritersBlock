@@ -90,7 +90,7 @@ $serif: 'Vesper Libre', serif;
   margin: 1vh;
   height: 12vh;
   width: 12vh;
-  background-size: contain;
+  background-size: contain !important;
   position: relative;
 }
 .prize:hover {

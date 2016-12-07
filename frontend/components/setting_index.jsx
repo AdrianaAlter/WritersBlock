@@ -1,7 +1,4 @@
 var React = require('react');
-var SessionStore = require('../stores/session_store.js');
-var UserStore = require('../stores/user_store.js');
-var Link = require('react-router').Link;
 var Modal = require('react-modal');
 var PrizeIndexItem = require('./prize_index_item.jsx');
 var PrizeCategoryItem = require('./prize_category_item.jsx');
@@ -49,13 +46,13 @@ var SettingIndex = React.createClass({
     return (
             <div>
               <button onClick={this.toggle}>Settings</button>
-                <Modal style={style} isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
-                  <div id="settings">
-                    <h1>My Prizes</h1>
-                    <ul>{categoryItems}</ul>
-                    <button onClick={this.toggle}>Done</button>
-                  </div>
-                </Modal>
+              <Modal style={style} isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
+                <div id="settings">
+                  <h1>My Prizes</h1>
+                  <ul>{categoryItems}</ul>
+                  <button onClick={this.toggle}>Done</button>
+                </div>
+              </Modal>
             </div>
           );
   }

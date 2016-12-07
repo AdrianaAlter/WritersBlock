@@ -1,34 +1,40 @@
 var React = require('react');
 var PrizeStore = require('../stores/prize_store.js');
-var SessionStore = require('../stores/session_store.js');
-var UserStore = require('../stores/user_store.js');
 var ApiUtil = require('../util/api_util.js');
-var Link = require('react-router').Link;
+var Modal = require('react-modal');
 var PrizeCategoryItem = require('./prize_category_item.jsx');
 
 var PrizeIndex = React.createClass({
-  contextTypes: { router: React.PropTypes.object.isRequired },
+
   getInitialState: function(){
-    return { prizes: PrizeStore.all(), user: UserStore.all() }
+    return { prizes: PrizeStore.all(), modalIsOpen: false }
   },
   componentDidMount: function(){
-    this.listener1 = UserStore.addListener(this._onChange);
-    this.listener2 = PrizeStore.addListener(this._onChange);
-    ApiUtil.fetchCurrentUser();
+    this.listener = PrizeStore.addListener(this._onChange);
     ApiUtil.fetchAllPrizes();
   },
   _onChange: function(){
-    this.setState({ prizes: PrizeStore.all(), user: UserStore.all() });
+    this.setState({ prizes: PrizeStore.all() });
   },
   componentWillUnmount: function(){
-    this.listener1.remove();
-    this.listener2.remove();
+    this.listener.remove();
   },
-  goBack: function(){
-    this.context.router.goBack();
+  toggle: function(){
+    this.state.modalIsOpen ? this.setState({ modalIsOpen: false }) : this.setState({ modalIsOpen: true });
   },
-
   render: function(){
+    var style = {
+          overlay: {
+            background: 'transparent'
+          },
+          content : {
+            background: 'rgba(19, 51, 89, 1)',
+            top: '10vh',
+            left: '0',
+            right: '0',
+            bottom: '0'
+          }
+    };
     var self = this;
     var categoryItems;
     if (!this.state.prizes){
@@ -36,14 +42,19 @@ var PrizeIndex = React.createClass({
     }
     else {
       categoryItems = this.state.prizes.map(function(cat){
-         return <PrizeCategoryItem category={cat[0].category} price={cat[0].price} key={cat.length + cat[0].id} user={self.state.user} type="store" />
+         return <PrizeCategoryItem category={cat[0].category} price={cat[0].price} key={cat.length + cat[0].id} user={self.props.user} type="store" />
       });
     }
     return (
-      <div id="prize-store" className="group">
-        <h1>All Prizes</h1>
-        <ul>{categoryItems}</ul>
-        <button onClick={this.goBack}>Done</button>
+      <div>
+        <button onClick={this.toggle}>Prizes</button>
+        <Modal style={style} isOpen={this.state.modalIsOpen}>
+          <div id="prize-store" className="group">
+            <h1>All Prizes</h1>
+            <ul>{categoryItems}</ul>
+            <button onClick={this.toggle}>Done</button>
+          </div>
+        </Modal>
       </div>
     )
   }

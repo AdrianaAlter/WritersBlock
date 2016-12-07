@@ -7,10 +7,10 @@ $font: 'Dancing Script', cursive;
 $serif: 'Vesper Libre', serif;
 
 #prize-store {
-  background-color: transparentize($blue, .1);
-  height: 89.4vh;
-  padding-bottom: 4vh;
-  overflow-y: scroll;
+  // background-color: transparentize($blue, .1);
+  // height: 89.4vh;
+  // padding-bottom: 4vh;
+  // overflow-y: scroll;
 }
 #prize-store button, #settings button {
   float: none;
@@ -40,7 +40,7 @@ $serif: 'Vesper Libre', serif;
     background-color: transparentize($bronze, .1);
     width: 90%;
     margin: 0 auto 4vh auto;
-    height: 100px;
+    height: 30vh;
     list-style: none;
     padding: 1vh 2vh;
     overflow-y: scroll;
@@ -64,7 +64,6 @@ $serif: 'Vesper Libre', serif;
       width: 5vw;
       color: $lightbronze;
     }
-
     .cat-name {
       float: 1eft;
     }

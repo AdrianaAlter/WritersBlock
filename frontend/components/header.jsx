@@ -32,7 +32,7 @@ var Header = React.createClass({
         <LogOutButton />
         <button id="point-count">Points: {this.state.user.points}</button>
         <Link to="/"><button>Projects</button></Link>
-        <Link to="/prizes"><button>Prizes</button></Link>
+        <PrizeIndex user={this.state.user} />
         <SettingIndex user={this.state.user}/>
       </header>
     )

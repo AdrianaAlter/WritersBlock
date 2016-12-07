@@ -12,14 +12,11 @@ var App = require('./components/app.jsx');
 var Welcome = require('./components/welcome.jsx');
 var ProjectIndex = require('./components/project_index.jsx');
 var ProjectDetail = require('./components/project_detail.jsx');
-var PrizeIndex = require('./components/prize_index.jsx');
-var SettingIndex = require('./components/setting_index.jsx');
 
 var routes = (
   <Router history={BrowserHistory}>
     <Route path="/" component={App} onEnter={_mustLogIn}>
       <IndexRoute component={ProjectIndex} />
-      <Route path="prizes" component={PrizeIndex} />
       <Route path="projects/:project_id" component={ProjectDetail} />
     </Route>
     <Route path="/login" component={Welcome} />

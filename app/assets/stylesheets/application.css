@@ -115,7 +115,7 @@
    background-image: url('http://data.whicdn.com/images/93513121/original.png');
    background-size: auto;
 }
-.snake {
+.snake-print {
   background-image: url('https://t3.ftcdn.net/jpg/01/07/72/94/240_F_107729446_Lw5ktZncenGmFjXdaAtwOQtab9F0dqyp.jpg');
   background-size: auto;
 }
@@ -127,7 +127,7 @@
   background-image: url('http://img05.deviantart.net/286e/i/2011/343/f/b/seamless_metal_plate_by_hhh316-d4ink0a.jpg');
 }
 .whitelace {
-  background-image: url('https://www.colourbox.com/preview/11473022-lace-seamless-pattern-with-flowers.jpg');
+  background-image: url('http://cache3.asset-cache.net/xt/186455359.jpg?v=1&g=fs1%7C0%7CSKP155%7C55%7C359&s=1&b=NjFE');
 }
 .red-velvet {
   background-image: url('http://www.socialh.com/wp-content/uploads/2013/04/AOPT24.jpg');
@@ -145,8 +145,16 @@
   background-image: url('http://www.commentnation.com/backgrounds/images/oriental_rug_red_seamless_carpet_background_tileable.jpg');
   background-size: auto;
 }
+.vortex {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/236x/b7/92/56/b79256341037562b017901c49e7fadc5.jpg');
+  background-size: auto;
+}
 .green-damask {
-  background-image: url('http://images.all-free-download.com/images/graphicthumb/vector_green_seamless_pattern_background_531597.jpg');
+  background-image: url('http://colourlovers.com.s3.amazonaws.com/images/patterns/3100/3100507.png');
+  background-size: auto;
+}
+.snake {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/236x/b2/35/dd/b235ddeb1ee2e36b5c3633760d20149e.jpg');
   background-size: auto;
 }
 .red-damask {
@@ -154,11 +162,34 @@
   background-size: auto;
 }
 .blue-damask {
-  background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_baby_blue.jpg');
+  /*background-image: url('https://s-media-cache-ak0.pinimg.com/236x/ce/2c/b8/ce2cb813e22334864a8a51cfbd832206.jpg');*/
+  background-image: url('http://www.zingerbug.com/Backgrounds/background_images/dark_blue_ornate_floral_wallpaper_tileable.jpg');
+  background-size: auto;
+}
+
+.party {
+  background-image: url('http://freedesignfile.com/upload/2015/12/Decorative-ornate-pattern-seamless-vector-01.jpg');
+  background-size: auto;
+}
+.animals {
+  background-image: url('http://freedesignfile.com/upload/2013/11/Animals-5-280x235.jpg');
   background-size: auto;
 }
 .pink-damask {
-  background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_pink.jpg');
+  background-image: url('http://allfreedesigns.com/wp-content/uploads/2015/08/damask-patterns-6.jpg');
+  background-size: auto;
+}
+.power {
+  background-image: url('http://freedesignfile.com/upload/2016/10/Gold-laser-vector-background-02-280x235.jpg');
+  background-position: center;
+  background-size: auto;
+}
+.safari {
+  background-image: url('http://freedesignfile.com/upload/2014/10/African-style-seamless-vector-pattern-03-280x235.jpg');
+  background-size: auto;
+}
+.giraffe {
+  background-image: url('http://freedesignfile.com/upload/2015/08/Animal-fur-texture-seamless-pattern-vector-07-280x235.jpg');
   background-size: auto;
 }
 .gold-damask {
@@ -200,7 +231,7 @@
   background-size: contain;
 }
 .birds {
-  background-image: url('http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0510/7764/rRavenclaw_Pattern_shop_thumb.png');
+  background-image: url('http://freedesignfile.com/upload/2015/12/Birds-with-damask-pattern-seamless-vector-02.jpg');
 }
 .maze {
   background-image: url('http://textures101.com/textures/Paper/Wallpaper/2011/10/10/tn1_4893051426b62fa08ebfo_zxjfx.jpg');
@@ -233,7 +264,7 @@
   background-size: auto;
 }
 .dark-square {
-  background-image: url('dark-square.gif');
+  background-image: url('http://freedesignfile.com/upload/2016/06/Luxury-gold-pattern-seamless-vector-09.jpg');
   background-size: auto;
 }
 .lava-rock {
@@ -434,6 +465,7 @@
 }
 .pink-paper {
   background-image: url('http://www.zingerbug.com/Backgrounds/background_images/pink_parchment_paper_wallpaper_texture_seamless.jpg');
+  background-size: auto;
 }
 .red-paper {
   background-image: url('http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/1191/full/deep-crimson-red-seamless-grunge-textures-16.jpg');
@@ -442,7 +474,60 @@
   background-image: url('http://www.commentnation.com/backgrounds/images/gold_paper_texture_background_seamless_pattern.jpg');
 }
 .blue-paper {
-  background-image: url('http://www.commentnation.com/backgrounds/images/blue_paper_texture_background_seamless_pattern.jpg');
+  background-image: url('http://images.naldzgraphics.net/2014/07/15-blue-crumpled-paper-textures.jpg');
+  background-size: auto;
+}
+.bag {
+  background-image: url('https://images.freecreatives.com/wp-content/uploads/2015/10/brown_paper_bag-texture-for-photoshop.jpg');
+  background-size: cover;
+}
+.bag2 {
+  background-image: url('https://images.freecreatives.com/wp-content/uploads/2015/10/coffee-bag-texture.jpg');
+  background-size: cover;
+}
+.pink-flecked {
+  background-image: url('http://www.photos-public-domain.com/wp-content/uploads/2011/12/rose-colored-paper-texture-with-flecks.jpg');
+  background-size: cover;
+}
+.peach-flecked {
+  background-image: url('http://www.photos-public-domain.com/wp-content/uploads/2011/12/peach-colored-paper-texture-with-flecks.jpg');
+  background-size: auto;
+}
+.red-flecked {
+  background-image: url('http://www.photos-public-domain.com/wp-content/uploads/2011/11/deep-red-paper-texture-with-flecks.jpg');
+  background-size: cover;
+}
+.light-green-paper {
+  background-image: url('http://www.lcpackaging.com.au/components/com_virtuemart/shop_image/product/Lime_Green_Tissu_50a1d55442381.jpg');
+  background-size: cover;
+}
+.black-paper {
+  background-image: url('http://www.photos-public-domain.com/wp-content/uploads/2012/05/black-paper-texture.jpg');
+  background-size: cover;
+}
+.tan-paper {
+  background-image: url('http://www.wildtextures.com/wp-content/uploads/wildtextures-just-paper-seamless-texture-480x480.jpg');
+  background-size: auto;
+}
+.grey-paper {
+  background-image: url('https://superdevresources.com/wp-content/uploads/2014/08/colored-vintage-paper-texture.jpg');
+  background-size: cover;
+}
+.cardboard {
+  background-image: url('https://inspirationhut.net/wp-content/uploads/2012/11/Brown-Cardboard-Paper-Texture.jpg');
+  background-size: cover;
+}
+.stained {
+  background-image: url('http://i0.wp.com/www.ucreative.com/wp-content/uploads/2010/08/8-untitled.jpg?resize=500%2C300');
+  background-size: cover;
+}
+.cracked {
+  background-image: url('http://i0.wp.com/www.ucreative.com/wp-content/uploads/2010/08/38-old-paper-41.jpg?resize=500%2C300');
+  background-size: cover;
+}
+.patterned {
+  background-image: url('http://i2.wp.com/www.ucreative.com/wp-content/uploads/2010/08/42-warm-desire-1.jpg?resize=500%2C300');
+  background-size: cover;
 }
 .slate {
   background-image: url('https://c2.staticflickr.com/6/5164/5290154654_4d8949fb71_z.jpg');
@@ -456,7 +541,7 @@
   background-size: cover;
 }
 .graph-paper {
-  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/00/7f/0b/007f0b700e78706f35078ac48bdba9cb.jpg');
+  background-image: url('http://media.istockphoto.com/vectors/graph-paper-cyan-color-seamless-pattern-vector-id496414378?k=6&m=496414378&s=170667a&w=0&h=SNHVKOWnPuJA8m5P3mu8qN3LIEy4U5M828UdpQt28Zo=');
 }
 .blackboard {
   background-image: url('http://www.sketchuptextureclub.com/public/texture_m/0001-blackboard-texture-seamless.jpg');

@@ -1,17 +1,12 @@
 $bronze: #CEAA78;
 $blue: #133359;
 $darkbronze: darken($bronze, 50%);
+$darkdarkbronze: darken($darkbronze, 10%);
 $lightbronze: lighten($bronze, 20%);
 $lightblue: #35597B;
 $font: 'Dancing Script', cursive;
 $serif: 'Vesper Libre', serif;
 
-#prize-store {
-  // background-color: transparentize($blue, .1);
-  // height: 89.4vh;
-  // padding-bottom: 4vh;
-  // overflow-y: scroll;
-}
 #prize-store button, #settings button {
   float: none;
   width: 16vw;
@@ -118,6 +113,30 @@ $serif: 'Vesper Libre', serif;
   border-radius: 50px;
   background: transparentize($lightbronze, .2);
   left: 0%;
+}
+.new {
+  position: relative;
+  overflow: hidden;
+}
+.new:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  height: 10vh;
+  width: 1.5vh;
+  left: 10%;
+  top: -25%;
+  transform: rotate(45deg);
+  background: linear-gradient($darkdarkbronze, $darkbronze, $bronze, $lightbronze, $bronze, $darkbronze, $darkdarkbronze);
+  box-shadow: 3px 3px 5px $darkdarkbronze;
+}
+.new:after {
+  @extend .bought:before;
+  content: "NEW!";
+  color: #A51212;
+//   @extend .new:before;
+//   top: 30%;
+//   left: 70%;
 }
 #settings {
   .selected {

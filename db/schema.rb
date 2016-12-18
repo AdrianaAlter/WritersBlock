@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(version: 20161130221803) do
     t.string  "category"
     t.integer "price"
     t.string  "name"
-    t.boolean "new",      default: true
   end
 
   create_table "projects", force: :cascade do |t|
@@ -39,6 +38,7 @@ ActiveRecord::Schema.define(version: 20161130221803) do
     t.string  "session_token",                null: false
     t.integer "points",          default: 0
     t.json    "prizes",          default: [],              array: true
+    t.json    "used",            default: [],              array: true
     t.hstore  "settings",        default: {}
   end
 

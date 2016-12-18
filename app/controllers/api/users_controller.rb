@@ -21,7 +21,9 @@ class Api::UsersController < ApplicationController
       name = params[:setting].first.last
       new_settings = @user.settings
       new_settings[category] = name
+      new_used = @user.used.push(params[:setting]).uniq
       @user.update(settings: new_settings)
+      @user.update(used: new_used)
     end
     @prizes = @user.prizes
     render :show

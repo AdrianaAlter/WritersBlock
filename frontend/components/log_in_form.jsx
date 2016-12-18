@@ -44,7 +44,7 @@ var LogInForm = React.createClass({
     return(
       <section>
         <button onClick={this.toggle} className="left">Log In</button>
-        <Modal style={style} isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
+        <Modal style={style} contentLabel="Modal" isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
           <form>
             <h1>Log In</h1>
             <label>User Name</label>

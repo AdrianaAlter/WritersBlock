@@ -9,7 +9,7 @@
 User.all[0].destroy
 Prize.destroy_all
 
-user1 = User.create({user_name: 'Sennacy the Greater', password: 'sennacy', points: 1000})
+user1 = User.create({user_name: 'Sennacy the Greater', password: 'sennacy', points: 9999})
 
 project1 = Project.create({title: 'Project1', body: '', user_id: user1.id, count: 0})
 project2 = Project.create({title: 'Project2', body: '', user_id: user1.id, count: 0})

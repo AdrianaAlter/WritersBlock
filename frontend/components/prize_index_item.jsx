@@ -3,40 +3,34 @@ var ApiUtil = require('../util/api_util.js');
 
 var PrizeIndexItem = React.createClass({
 
-  getInitialState: function(){
-    return { selected: false, new: true }
-  },
-  select: function(){
-    this.setState({ selected: true });
-  },
-  break: function(){
-    this.state.new == true ? this.setState({ new: false }) : null;
-  },
   render: function(){
-    var selected = (this.state.selected || (this.props.currentSettings && this.props.currentSettings.includes(this.props.item.name))) ? " selected" : "";
-    var isNew = this.state.new ? " new" : "";
-    var className = this.props.item.name + " prize " + this.props.item.category + selected + isNew;
+    var className = this.props.item.name + " prize " + this.props.item.category;
     var self = this;
     var buy = function(){
-      self.select();
       var deduction = self.props.item.price * -1;
       className += " bought";
       ApiUtil.adjustPoints(self.props.user.id, deduction);
       ApiUtil.acquirePrize(self.props.user.id, self.props.item);
     }
     var saveSetting = function(userId, setting){
-      self.select();
-      self.break();
       ApiUtil.saveSetting(self.props.user.id, self.props.item)
     };
     var style;
     var text;
     var fn;
     var purchased = [];
+    var used = [];
     if (this.props.user.prizes){
       this.props.user.prizes.map(function(prize){
         if (prize !== null){
           purchased.push(prize.name);
+        }
+      });
+    }
+    if (this.props.user.used){
+      this.props.user.used.map(function(usedPrize){
+        if (usedPrize !== null){
+          used.push(usedPrize.name);
         }
       });
     }
@@ -55,6 +49,12 @@ var PrizeIndexItem = React.createClass({
     }
     else if (this.props.type == "settings"){
       fn = saveSetting;
+      if (!used.includes(this.props.item.name)){
+        className += " new";
+      }
+      if (this.props.user.settings[this.props.item.category] == this.props.item.name){
+        className += " selected";
+      }
     }
     if (this.props.item.category == "color"){
       style = { backgroundColor: this.props.item.name }

@@ -48,7 +48,7 @@ var PrizeIndex = React.createClass({
     return (
       <div>
         <button onClick={this.toggle}>Prizes</button>
-        <Modal style={style} isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
+        <Modal style={style} contentLabel="Modal" isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
           <div id="prize-store" className="group">
             <h1>All Prizes</h1>
             <ul>{categoryItems}</ul>

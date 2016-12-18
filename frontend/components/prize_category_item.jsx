@@ -17,13 +17,12 @@ var PrizeCategoryItem = React.createClass({
     var style;
     var self = this;
     var indexItems;
-    var currentSettings = this.props.currentSettings ? this.props.currentSettings : null;
     if (!this.state.items){
       indexItems =  <div>You don't have any {this.props.category}s yet!</div>
     }
     else {
       indexItems = this.state.items.map(function(item){
-        return <PrizeIndexItem key={item.id} item={item} user={self.props.user} type={self.props.type} currentSettings={currentSettings} />
+        return <PrizeIndexItem key={item.id} item={item} user={self.props.user} type={self.props.type} />
       });
     }
     return (

@@ -4,7 +4,6 @@ class CreatePrizes < ActiveRecord::Migration
       t.string :category
       t.integer :price
       t.string :name
-      t.boolean :new, default: true
     end
   end
 end

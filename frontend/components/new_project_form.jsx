@@ -47,7 +47,7 @@ var NewProjectForm = React.createClass({
     return (
       <div>
         {button}
-        <Modal style={style} isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
+        <Modal style={style} contentLabel="Modal" isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
           {form}
         </Modal>
       </div>

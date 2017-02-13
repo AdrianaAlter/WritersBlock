@@ -1,0 +1,108 @@
+#projects {
+  text-align: center;
+  color: #CEAA78;
+  background: rgba(206, 170, 120, 0.2); }
+  #projects h1 {
+    font-size: 8vh;
+    line-height: 12vh;
+    color: #133359;
+    font-family: "Dancing Script", cursive; }
+  #projects h2 {
+    font-size: 5vh;
+    line-height: 14vh;
+    font-family: 'Oregano', cursive;
+    font-weight: normal; }
+  #projects h3 {
+    font-size: 4vh;
+    font-family: "Vesper Libre", serif; }
+  #projects ul {
+    width: 1200px;
+    margin: 20px auto;
+    display: block;
+    background: #CEAA78;
+    border-radius: 4px;
+    height: 400px;
+    padding: 20px;
+    overflow-y: scroll;
+    font-family: "Dancing Script", cursive; }
+    #projects ul li {
+      background: #133359;
+      color: #CEAA78;
+      width: 260px;
+      height: 150px;
+      display: block;
+      float: left;
+      margin: 10px;
+      padding: 5px;
+      border-radius: 4px;
+      transition: background 1s, color 1.5s; }
+    #projects ul li:hover {
+      color: #e9d9c3;
+      background: #342613; }
+  #projects button {
+    margin: auto;
+    width: 16vw;
+    height: 10vh;
+    float: none;
+    font-size: 5vh;
+    color: #CEAA78;
+    text-align: center;
+    background-color: #133359; }
+  #projects button:hover {
+    background: #342613;
+    color: #e9d9c3; }
+
+#detail {
+  height: 89vh;
+  padding-bottom: 1vh;
+  background-color: rgba(206, 170, 120, 0.2); }
+  #detail h1 {
+    color: transparent;
+    text-align: center; }
+  #detail #holder {
+    height: 80%;
+    width: 80%;
+    padding: 4%;
+    display: block;
+    margin: 2% auto 0 auto;
+    background-color: #133359;
+    border-radius: 2%;
+    box-shadow: 4px 6px 2px black, -4px 0px 2px black; }
+    #detail #holder textarea {
+      display: block;
+      background-color: #CEAA78;
+      width: 80%;
+      float: left;
+      font-size: 24px;
+      height: 100%;
+      overflow-y: scroll;
+      box-shadow: inset 3px 3px 2px black;
+      padding: 2%; }
+    #detail #holder #buttons {
+      float: right;
+      background-color: #CEAA78;
+      box-shadow: inset 3px 3px 2px black;
+      height: 100%;
+      width: 16%;
+      margin-left: 4%;
+      color: inherit; }
+      #detail #holder #buttons button {
+        margin: 3vh auto;
+        height: 12%;
+        float: none;
+        width: 100%;
+        background-color: rgba(52, 38, 19, 0.5);
+        text-align: center;
+        font-size: 5vh;
+        box-shadow: inset 3px 0px 2px black;
+        color: #CEAA78;
+        border-radius: 0;
+        transition: background 1s; }
+      #detail #holder #buttons button:hover {
+        background: rgba(52, 38, 19, 0.8); }
+      #detail #holder #buttons section {
+        margin: 25% auto 20vh auto;
+        text-align: center;
+        font-size: 8vh; }
+
+/*# sourceMappingURL=projects.css.map */

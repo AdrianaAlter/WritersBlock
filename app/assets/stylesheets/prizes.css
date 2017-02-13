@@ -1,0 +1,123 @@
+#prize-store button, #settings button {
+  float: none;
+  width: 16vw;
+  height: 10vh;
+  margin: auto;
+  font-size: 5vh;
+  color: #342613;
+  transition: background 1s, color 1s;
+  text-align: center;
+  background-color: #CEAA78; }
+
+#prize-store button:hover, #settings button:hover {
+  background: #342613;
+  color: #e9d9c3; }
+
+#prize-store h1, #settings h1 {
+  color: #CEAA78;
+  text-align: center;
+  font-size: 8vh;
+  margin-top: 2vh;
+  font-family: "Dancing Script", cursive; }
+
+.category .cat-list {
+  border-radius: 0 0 1vh 1vh;
+  background-color: rgba(206, 170, 120, 0.9);
+  width: 90%;
+  margin: 0 auto 4vh auto;
+  height: 30vh;
+  list-style: none;
+  padding: 1vh 2vh;
+  overflow-y: scroll; }
+.category .cat-header {
+  font-family: 'Oregano', cursive;
+  font-weight: normal;
+  border-radius: 1vh 1vh 0 0;
+  width: 90%;
+  height: 6vh;
+  margin: 2vh auto 0 auto;
+  background-color: #342613;
+  font-size: 2.5vh;
+  letter-spacing: .1vw; }
+  .category .cat-header h2 {
+    display: inline;
+    margin: 0 1vw;
+    line-height: 6vh;
+    padding: 0;
+    width: 5vw;
+    color: #e9d9c3; }
+  .category .cat-header .cat-name {
+    float: 1eft; }
+  .category .cat-header .cat-price {
+    float: right; }
+
+.prize {
+  color: #CEAA78;
+  border-radius: 10%;
+  border: 1vh solid rgba(233, 217, 195, 0.9);
+  text-align: center;
+  line-height: 10vh;
+  font-size: 20px;
+  list-style: none;
+  background-color: #133359;
+  cursor: pointer;
+  float: left;
+  margin: 1vh;
+  height: 12vh;
+  width: 12vh;
+  background-size: contain !important;
+  position: relative; }
+
+.prize:hover {
+  box-shadow: 1px 1px 2px #342613; }
+
+.locked {
+  opacity: .7; }
+
+.locked:hover, .bought:hover {
+  box-shadow: none; }
+
+.bought, .locked {
+  cursor: default; }
+
+.bought:before, .new:after {
+  content: "OWNED";
+  text-shadow: 1px 1px 1px #342613;
+  color: #133359;
+  font-size: 2.5vh;
+  line-height: 11vh;
+  text-align: center;
+  font-family: serif !important;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 50px;
+  background: rgba(233, 217, 195, 0.8);
+  left: 0%; }
+
+.new {
+  position: relative;
+  overflow: hidden; }
+
+.new:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  height: 10vh;
+  width: 1.5vh;
+  left: 10%;
+  top: -25%;
+  transform: rotate(45deg);
+  background: linear-gradient(#0f0b05, #342613, #CEAA78, #e9d9c3, #CEAA78, #342613, #0f0b05);
+  box-shadow: 3px 3px 5px #0f0b05; }
+
+.new:after {
+  content: "NEW!";
+  color: #A51212; }
+
+#settings .selected {
+  border-color: #342613; }
+#settings .cat-list {
+  font-family: "Vesper Libre", serif; }
+
+/*# sourceMappingURL=prizes.css.map */

@@ -30,7 +30,7 @@ var SignUpForm = React.createClass({
             backgroundColor: 'rgba(19, 51, 89, 0.5)'
           },
           content : {
-            background: 'rgba(19, 51, 89, 0.75)',
+            backgroundColor: 'transparent',
             borderColor: 'transparent'
           }
         };
@@ -40,12 +40,10 @@ var SignUpForm = React.createClass({
         <Modal style={style} contentLabel="Modal" isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
           <form>
             <h1>Sign Up</h1>
-            <label>User Name</label>
-            <input type="text" onChange={this.updateName}></input>
-            <label>Password</label>
-            <input type="password" onChange={this.updatePassword}></input>
+            <input type="text" placeholder="User Name" onChange={this.updateName}></input>
+            <input type="password" placeholder="Password" onChange={this.updatePassword}></input>
             <section className="welcome-buttons">
-              <button className="left" onClick={this.handleSubmit}>Submit</button>
+              <button onClick={this.handleSubmit}>Submit</button>
               <button onClick={this.toggle}>Cancel</button>
             </section>
           </form>

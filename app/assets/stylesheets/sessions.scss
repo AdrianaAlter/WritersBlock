@@ -1,96 +1,167 @@
-$bronze: #CEAA78;
-$blue: #133359;
-$darkbronze: darken($bronze, 50%);
-$lightbronze: lighten($bronze, 20%);
-$font: 'Dancing Script', cursive;
-$serif: 'Vesper Libre', serif;
+@import 'variables';
 
 #welcome {
   background: $bronze;
-  display: block;
   height: 100vh;
   width: 100vw;
-
+  display: flex;
+  justify-content: center;
   div {
-    border: 1px solid transparent;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
+    border-radius: .5%;
+    background: lighten($bronze, 10%);
+    box-shadow: .15vh .15vh 2vh darken($bronze, 30%), -.5vh -.5vh 6vh darken($bronze, 30%);
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media #{$phone} {
+      width: 94%;
+      height: 97%;
+    }
   }
 }
 
 .welcome-buttons {
-  width: 36vw;
-  margin: 10vh auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   font-family: $font;
+  @media #{$phone}{
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  section {
+    flex-basis: 20%;
+    margin: 0 1vw;
+  }
   button {
-    float: left;
-    width: 16vw;
-    height: 10vh;
-    margin: 0 !important;
     font-size: 5vh;
-    color: $bronze;
-    text-align: center;
+    width: 100%;
+    margin: 0;
+    float: none;
+    height: 10vh;
     background-color: $blue;
-  }
-  .left {
-    margin-right: 3.84vw !important;
-  }
-  button:hover {
-    background: $darkbronze;
     color: $lightbronze;
+    text-align: center;
+    transition: background-color 2s, color 2s, box-shadow 2s;
+    &:hover {
+      background-color: $bronze;
+      color: $darkbronze;
+      box-shadow: inset 1vh 1vh 4vh $darkbronze;
+    }
+    &:active {
+      background-color: $bronze;
+      color: $darkbronze;
+      box-shadow: inset 1vh 1vh 4vh $darkbronze;
+    }
+    @media #{$phone}{
+      width: 100%;
+      float: none;
+      margin: 0 0 1vh 0;
+    }
   }
 }
 
+
 #welcome h1 {
   color: $blue;
+  padding: 2vh 0;
   font-size: 10vh;
-  margin-top: 20vh;
   font-family: $font;
   text-align: center;
+  flex-basis: 30%;
+  @media #{$phone}{
+    font-size: 15vw;
+    margin-top: 10vh;
+  }
 }
 
 
 form {
-  display: block;
-  margin: 0;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 66%;
   height: 100%;
-  border: 2vw ridge $bronze;
-  box-shadow: inset 1.25vh 1.25vh 1vh darken($bronze, 50%);
+  border: 1.5vw ridge lighten($bronze, 10%);
+  box-shadow: inset 1.25vh 1.25vh 4vh $darkbronze;
   padding: 5vh;
+  border-radius: 1%;
   background: $bronze;
-
+  @media #{$phone} {
+    width: 100%;
+  }
   h1 {
     margin: 2vh 0;
     color: $blue;
-    font-size: 10vh;
+    font-size: 8vh;
     font-family: $font;
     text-align: center;
+    @media #{$phone} {
+      font-size: 10vw;
+    }
   }
-  input, label {
-    display: block;
-    margin: auto;
-    font-family: 'Oregano', cursive;
-  }
-  label {
-    font-size: 4vh;
-    color: $blue !important;
-  }
+
   input {
+    margin: 0 auto;
     font-size: 5vh;
-    font-family: $serif;
+    font-family: $cursive;
     color: $darkbronze;
     height: 10vh;
     width: 30vw;
     padding-left: 1vw;
-    padding-top: 2vh;
-    border: .5vh solid $blue;
-    border-radius: 15%;
-    background: $bronze;
-    box-shadow: inset 1vh 1vh 1vh $darkbronze;
+    padding-top: 1vh;
+    border-radius: 5%;
+    background: darken($bronze, 10%);
+    box-shadow: inset 1vh 1vh 4vh $darkbronze;
+    @media #{$phone}{
+      font-size: 6vw;
+      width: 100%;
+      height: 12%;
+      padding-left: 2vw;
+    }
   }
   input:hover, input:active {
-    background: $lightbronze;
+    border: .5vh solid $blue;
+  }
+  .welcome-buttons {
+    margin-top: 2vh;
+    button {
+      flex-basis: 25%;
+      margin: 0 1vw;
+      height: 10vh;
+      &:hover {
+        background: darken($bronze, 10%);
+      }
+    }
+    @media #{$phone} {
+      flex-direction: column;
+      justify-content: space-between;
+      button {
+        width: 100%;
+        margin: 1vh 0;
+      }
+    }
+  }
+  ::-webkit-input-placeholder {
+    color: $lightbronze;
+    font-family: $cursive;
+  }
+  ::-moz-placeholder {
+    color: $lightbronze;
+    font-family: $cursive;
+  }
+  :-ms-input-placeholder {
+    color: $lightbronze;
+    font-family: $cursive;
+  }
+  :-moz-placeholder {
+    color: $lightbronze;
+    font-family: $cursive;
   }
 }

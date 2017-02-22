@@ -14,78 +14,52 @@
  *= require_self
  */
  * {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  outline: 0;
   background: transparent;
+  background-size: contain;
+  border: 0;
   box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
   text-align: inherit;
   text-decoration: inherit;
   vertical-align: inherit;
-  background-size: contain;
-  list-style: none;
+  overflow-x: hidden;
 }
 
 .group:after {
-  content: "";
-  clear: both;
   display: block;
+  clear: both;
+  content: "";
 }
 
+.hidden {
+  display: none;
+}
 
- button {
-   display: block;
-   float: right;
-   margin-right: 20px;
-   outline: none;
+ button, nav a, nav div {
+   background: #133359;
    border: none;
-   height: 50px;
-   width: 80px;
-   font-size: 16px;
    border-radius: 4px;
+   color: #CEAA78;
    cursor: pointer;
-   transition: background 1s, color 1s;
+   display: block;
    font-family: 'Oregano', cursive;
+   font-size: 3vh;
+   height: 100%;
+   outline: none;
+   text-align: center;
+   transition: background 1s, color 1s;
  }
 
  button:hover {
    background: #342613;
  }
 
- header {
-   width: 100%;
-   height: 10%;
-   padding: 10px;
-   background: #CEAA78;
- }
-
- header h1 {
-   margin: 0 !important;
-   display: block;
-   float: left;
-   height: 6vh;
-   color: #342613;
-   width: 16vw;
-   font-family: 'Dancing Script', cursive;
- }
-
- header button {
-   background: #133359;
-   text-align: center;
-   font-size: 3vh;
-   color: #CEAA78;
- }
-
- #point-count:hover{
-   background: #133359;
-   color: #CEAA78;
-   cursor: default;
- }
-
 ::-webkit-scrollbar {
-  width: 15px;
   background-color: transparent;
+  width: 15px;
 
 }
 ::-webkit-scrollbar-thumb {
@@ -93,7 +67,6 @@
 }
 ::-webkit-scrollbar-button {
   background-color: transparent;
-
 }
 ::-webkit-scrollbar-corner {
   display: none;

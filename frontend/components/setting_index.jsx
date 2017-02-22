@@ -15,18 +15,18 @@ var SettingIndex = React.createClass({
 
   render: function(){
     var style = {
-        overlay : {
-          backgroundColor: 'rgba(206, 170, 120, 0.3)'
-        },
-        content : {
-          background: 'rgba(19, 51, 89, 0.8)',
-          borderColor: 'transparent',
-          top: '20vh',
-          left: '19vh',
-          right: '19vh',
-          bottom: '9vh'
-        }
+          overlay: {
+            background: 'rgba(206, 170, 120, 0.8)'
+          },
+          content : {
+            background: 'rgba(19, 51, 89, 1)',
+            top: '5vh',
+            left: '5vh',
+            right: '5vh',
+            bottom: '5vh'
+          }
     };
+    var buttonContent = this.props.mobile ? <i className="fa fa-cogs" aria-hidden="true"></i> : "Settings";
     var self = this;
     var purchases;
     var categories = ["background", "frame", "paper", "font", "color"];
@@ -38,10 +38,9 @@ var SettingIndex = React.createClass({
         return <PrizeCategoryItem key={categories.indexOf(cat)} category={cat} price={""} type="settings" user={self.props.user} />
       });
     }
-
     return (
             <div>
-              <button onClick={this.toggle}>Settings</button>
+              <button onClick={this.toggle}>{buttonContent}</button>
               <Modal style={style} contentLabel="Modal" isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
                 <div id="settings">
                   <h1>My Prizes</h1>

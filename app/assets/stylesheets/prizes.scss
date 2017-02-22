@@ -1,22 +1,22 @@
 $bronze: #CEAA78;
-$blue: #133359;
 $darkbronze: darken($bronze, 50%);
 $darkdarkbronze: darken($darkbronze, 10%);
-$lightbronze: lighten($bronze, 20%);
-$lightblue: #35597B;
-$font: 'Dancing Script', cursive;
-$serif: 'Vesper Libre', serif;
+@import "variables";
 
 #prize-store button, #settings button {
+  background-color: $bronze;
+  color: $darkbronze;
   float: none;
-  width: 16vw;
+  font-size: 5vh;
   height: 10vh;
   margin: auto;
-  font-size: 5vh;
-  color: $darkbronze;
-  transition: background 1s, color 1s;
   text-align: center;
-  background-color: $bronze;
+  transition: background 1s, color 1s;
+  width: 16vw;
+  @media #{$phone}{
+    font-size: 4vh;
+    width: 18vw;
+  }
 }
 #prize-store button:hover, #settings button:hover {
   background: $darkbronze;
@@ -24,40 +24,45 @@ $serif: 'Vesper Libre', serif;
 }
 #prize-store h1, #settings h1 {
   color: $bronze;
-  text-align: center;
+  font-family: $font;
   font-size: 8vh;
   margin-top: 2vh;
-  font-family: $font;
+  text-align: center;
+  @media #{$phone}{
+    font-size: 8vw;
+    margin-top: 1vh;
+  }
 }
 .category {
   .cat-list {
-    border-radius: 0 0 1vh 1vh;
     background-color: transparentize($bronze, .1);
-    width: 90%;
-    margin: 0 auto 4vh auto;
+    border-radius: 0 0 1vh 1vh;
+    display: flex;
+    flex-wrap: wrap;
     height: 30vh;
     list-style: none;
-    padding: 1vh 2vh;
+    margin: 0 auto 4vh auto;
     overflow-y: scroll;
+    padding: 1vh 2vh;
+    width: 90%;
   }
   .cat-header {
-    font-family: 'Oregano', cursive;
-    font-weight: normal;
-    border-radius: 1vh 1vh 0 0;
-    width: 90%;
-    height: 6vh;
-    margin: 2vh auto 0 auto;
     background-color: $darkbronze;
+    border-radius: 1vh 1vh 0 0;
+    font-family: 'Oregano', cursive;
     font-size: 2.5vh;
+    font-weight: normal;
+    height: 6vh;
     letter-spacing: .1vw;
-
+    margin: 2vh auto 0 auto;
+    width: 90%;
     h2 {
+      color: $lightbronze;
       display: inline;
-      margin: 0 1vw;
       line-height: 6vh;
+      margin: 0 1vw;
       padding: 0;
       width: 5vw;
-      color: $lightbronze;
     }
     .cat-name {
       float: 1eft;
@@ -66,26 +71,31 @@ $serif: 'Vesper Libre', serif;
       float: right;
     }
   }
-
 }
 
-
 .prize {
-  color: $bronze;
-  border-radius: 10%;
-  border: 1vh solid transparentize($lightbronze, .1);
-  text-align: center;
-  line-height: 10vh;
-  font-size: 20px;
-  list-style: none;
   background-color: $blue;
-  cursor: pointer;
-  float: left;
-  margin: 1vh;
-  height: 12vh;
-  width: 12vh;
   background-size: contain !important;
+  border: 1vh solid transparentize($lightbronze, .1);
+  border-radius: 10%;
+  color: $bronze;
+  cursor: pointer;
+  font-size: 20px;
+  height: 12vh;
+  line-height: 10vh;
+  list-style: none;
+  margin: 1vh;
   position: relative;
+  text-align: center;
+  width: 12vh;
+  @media #{$phone}{
+    border-width: .4vw;
+    font-size: 3vw;
+    height: 15vw;
+    line-height: 4vh;
+    margin: .4vw;
+    width: 15vw;
+  }
 }
 .prize:hover {
   box-shadow: 1px 1px 2px $darkbronze;
@@ -100,43 +110,44 @@ $serif: 'Vesper Libre', serif;
   cursor: default;
 }
 .bought:before {
-  content: "OWNED";
-  text-shadow: 1px 1px 1px $darkbronze;
-  color: $blue;
-  font-size: 2.5vh;
-  line-height: 11vh;
-  text-align: center;
-  font-family: serif !important;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  border-radius: 50px;
   background: transparentize($lightbronze, .2);
+  border-radius: 50px;
+  color: $blue;
+  content: "OWNED";
+  font-family: serif !important;
+  font-size: 2.5vh;
+  height: 100%;
   left: 0%;
+  line-height: 11vh;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 1px $darkbronze;
+  width: 100%;
+  @media #{$phone}{
+    font-size: 3vw;
+    line-height: 8.5vh;
+  }
 }
 .new {
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 .new:before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  height: 10vh;
-  width: 1.5vh;
-  left: 10%;
-  top: -25%;
-  transform: rotate(45deg);
   background: linear-gradient($darkdarkbronze, $darkbronze, $bronze, $lightbronze, $bronze, $darkbronze, $darkdarkbronze);
   box-shadow: 3px 3px 5px $darkdarkbronze;
+  content: "";
+  height: 10vh;
+  left: 10%;
+  position: absolute;
+  top: -25%;
+  transform: rotate(45deg);
+  width: 1.5vh;
+  z-index: 2;
 }
 .new:after {
   @extend .bought:before;
-  content: "NEW!";
   color: #A51212;
-//   @extend .new:before;
-//   top: 30%;
-//   left: 70%;
+  content: "NEW!";
 }
 #settings {
   .selected {

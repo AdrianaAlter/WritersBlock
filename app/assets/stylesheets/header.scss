@@ -1,0 +1,108 @@
+@import 'variables';
+
+header {
+  background: $bronze;
+  height: 8vh;
+  padding: 1vh;
+  width: 100%;
+  overflow: visible;
+  @media #{$phone}{
+    margin: 0;
+  }
+
+  h1 {
+    color: $darkbronze;
+    display: block;
+    float: left;
+    font-family: $font;
+    font-size: 5vh;
+    height: 100%;
+    margin: 0 !important;
+    @media #{$phone}{
+      font-size: 6vw;
+      width: 35%;
+    }
+  }
+
+  nav {
+    display: flex;
+    float: right;
+    height: 100%;
+    width: 40%;
+    @media #{$phone}{
+      float: left;
+      width: 60%;
+      margin-left: 2%;
+      button, a, div {
+        line-height: 1vh;
+      }
+    }
+  }
+
+  #point-count {
+    font-weight: bold;
+    &:hover {
+      background: $blue;
+      color: $bronze;
+      cursor: default;
+    }
+  }
+
+}
+#project-form {
+  justify-content: space-between;
+  @media #{$phone}{
+    position: absolute;
+    left: 5%;
+    height: 30%;
+    width: 90%;
+    padding: 2vw;
+    justify-content: center;
+    h1 {
+      display: none;
+    }
+    input {
+      flex-basis: 60%;
+      margin: 0;
+      font-size: 10vw;
+      text-align: left;
+    }
+    .welcome-buttons {
+      flex-direction: row;
+      margin-top: 1vh;
+      justify-content: center;
+      flex-basis: 33%;
+      button {
+        margin: 0 1vw;
+        height: 100%;
+      }
+    }
+  }
+}
+#project-input {
+  flex-basis: 20%;
+}
+#form-button {
+  overflow: visible;
+}
+#form-button > i {
+  padding-top: 1vh;
+}
+#form-wrapper {
+  width: 80vw;
+  height: 30vh;
+  background: $blue;
+  overflow: visible;
+}
+
+
+
+
+
+nav > button, nav a, nav div {
+  flex-basis: 20%;
+  margin: 0 .25vw;
+}
+nav a > button, nav div > button {
+  width: 100%;
+}

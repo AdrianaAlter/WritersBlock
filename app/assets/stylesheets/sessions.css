@@ -1,133 +1,141 @@
 #welcome {
   background: #CEAA78;
-  height: 100vh;
-  width: 100vw;
   display: flex;
-  justify-content: center; }
+  height: 100vh;
+  justify-content: center;
+  width: 100vw; }
   #welcome div {
-    width: 90%;
-    height: 90%;
-    border-radius: .5%;
     background: #dcc29d;
+    border-radius: .5%;
     box-shadow: 0.15vh 0.15vh 2vh #7f5d2e, -0.5vh -0.5vh 6vh #7f5d2e;
-    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    height: 90%;
+    justify-content: center;
+    margin: auto;
+    width: 90%; }
+    #welcome div h1 {
+      color: #133359;
+      flex-basis: 30%;
+      font-family: "Dancing Script", cursive;
+      font-size: 10vh;
+      padding: 2vh 0;
+      text-align: center; }
+      @media only screen and (max-width: 1600px) and (orientation: portrait) {
+        #welcome div h1 {
+          font-size: 15vw;
+          margin-top: 10vh; } }
     @media only screen and (max-width: 1600px) and (orientation: portrait) {
       #welcome div {
-        width: 94%;
-        height: 97%; } }
+        height: 97%;
+        width: 94%; } }
 
 .welcome-buttons {
-  width: 100%;
   display: flex;
+  font-family: "Dancing Script", cursive;
   justify-content: center;
-  font-family: "Dancing Script", cursive; }
+  width: 100%; }
   @media only screen and (max-width: 1600px) and (orientation: portrait) {
     .welcome-buttons {
-      width: 80%;
-      margin: 0 auto;
       flex-direction: column;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 80%; } }
   .welcome-buttons section {
     flex-basis: 20%;
     margin: 0 1vw; }
   .welcome-buttons button {
-    font-size: 5vh;
-    width: 100%;
-    margin: 0;
-    float: none;
-    height: 10vh;
     background-color: #133359;
     color: #e9d9c3;
+    float: none;
+    font-size: 5vh;
+    height: 10vh;
+    margin: 0;
     text-align: center;
-    transition: background-color 2s, color 2s, box-shadow 2s; }
+    transition: background-color 2s, color 2s, box-shadow 2s;
+    width: 100%; }
     .welcome-buttons button:hover {
       background-color: #CEAA78;
-      color: #342613;
-      box-shadow: inset 1vh 1vh 4vh #342613; }
+      box-shadow: inset 1vh 1vh 4vh #342613;
+      color: #342613; }
     .welcome-buttons button:active {
       background-color: #CEAA78;
-      color: #342613;
-      box-shadow: inset 1vh 1vh 4vh #342613; }
+      box-shadow: inset 1vh 1vh 4vh #342613;
+      color: #342613; }
     @media only screen and (max-width: 1600px) and (orientation: portrait) {
       .welcome-buttons button {
-        width: 100%;
         float: none;
-        margin: 0 0 1vh 0; } }
-
-#welcome h1 {
-  color: #133359;
-  padding: 2vh 0;
-  font-size: 10vh;
-  font-family: "Dancing Script", cursive;
-  text-align: center;
-  flex-basis: 30%; }
-  @media only screen and (max-width: 1600px) and (orientation: portrait) {
-    #welcome h1 {
-      font-size: 15vw;
-      margin-top: 10vh; } }
+        margin: 0 0 1vh 0;
+        width: 100%; } }
 
 form {
+  background: #CEAA78;
+  border: 1.5vw ridge #dcc29d;
+  border-radius: 1%;
+  box-shadow: inset 1.25vh 1.25vh 4vh #342613;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 66%;
   height: 100%;
-  border: 1.5vw ridge #dcc29d;
-  box-shadow: inset 1.25vh 1.25vh 4vh #342613;
+  margin: 0 auto;
   padding: 5vh;
-  border-radius: 1%;
-  background: #CEAA78; }
+  width: 66%; }
   @media only screen and (max-width: 1600px) and (orientation: portrait) {
     form {
       width: 100%; } }
   form h1 {
-    margin: 2vh 0;
     color: #133359;
     font-size: 8vh;
     font-family: "Dancing Script", cursive;
+    margin: 2vh 0;
     text-align: center; }
     @media only screen and (max-width: 1600px) and (orientation: portrait) {
       form h1 {
-        font-size: 10vw; } }
+        font-size: 10vw;
+        margin: 0; } }
+  form fieldset {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    margin: 1vh auto;
+    width: 80%; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      form fieldset {
+        width: 100%; } }
   form input {
-    margin: 0 auto;
-    font-size: 5vh;
-    font-family: "Oregano", cursive;
+    background: #c09253;
+    border-radius: 5%;
+    box-shadow: inset 1vh 1vh 4vh #342613;
     color: #342613;
-    height: 10vh;
-    width: 30vw;
+    flex-basis: 40%;
+    font-family: "Oregano", cursive;
+    font-size: 5vh;
+    margin: 1vh auto;
     padding-left: 1vw;
     padding-top: 1vh;
-    border-radius: 5%;
-    background: #c09253;
-    box-shadow: inset 1vh 1vh 4vh #342613; }
+    transition: border 1s;
+    width: 100%; }
     @media only screen and (max-width: 1600px) and (orientation: portrait) {
       form input {
         font-size: 6vw;
-        width: 100%;
         height: 12%;
-        padding-left: 2vw; } }
+        padding-left: 2vw;
+        width: 100%; } }
   form input:hover, form input:active {
     border: 0.5vh solid #133359; }
   form .welcome-buttons {
     margin-top: 2vh; }
     form .welcome-buttons button {
       flex-basis: 25%;
-      margin: 0 1vw;
-      height: 10vh; }
+      height: 10vh;
+      margin: 0 1vw; }
       form .welcome-buttons button:hover {
         background: #c09253; }
     @media only screen and (max-width: 1600px) and (orientation: portrait) {
       form .welcome-buttons {
-        flex-direction: column;
-        justify-content: space-between; }
+        width: 100%; }
         form .welcome-buttons button {
-          width: 100%;
-          margin: 1vh 0; } }
+          margin: .5vh 0;
+          width: 100%; } }
   form ::-webkit-input-placeholder {
     color: #e9d9c3;
     font-family: "Oregano", cursive; }

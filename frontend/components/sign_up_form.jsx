@@ -40,8 +40,10 @@ var SignUpForm = React.createClass({
         <Modal style={style} contentLabel="Modal" isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
           <form>
             <h1>Sign Up</h1>
-            <input type="text" placeholder="User Name" onChange={this.updateName}></input>
-            <input type="password" placeholder="Password" onChange={this.updatePassword}></input>
+            <fieldset>
+              <input type="text" placeholder="User Name" onChange={this.updateName}></input>
+              <input type="password" placeholder="Password" onChange={this.updatePassword}></input>
+            </fieldset>
             <section className="welcome-buttons">
               <button onClick={this.handleSubmit}>Submit</button>
               <button onClick={this.toggle}>Cancel</button>

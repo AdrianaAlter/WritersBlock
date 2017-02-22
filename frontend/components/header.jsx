@@ -6,15 +6,19 @@ var Link = require('react-router').Link;
 var LogOutButton = require('./log_out_button.jsx');
 var SettingIndex = require('./setting_index.jsx');
 var PrizeIndex = require('./prize_index.jsx');
+var NewProjectForm = require('./new_project_form.jsx');
 
 var Header = React.createClass({
   contextTypes: { router: React.PropTypes.object.isRequired },
   getInitialState: function(){
-    return { user: this.getStateFromStore() }
+    return { user: this.getStateFromStore(), width: window.innerWidth }
   },
   getStateFromStore: function(){
     ApiUtil.fetchCurrentUser();
     return SessionStore.currentUser();
+  },
+  componentWillMount() {
+    window.addEventListener('resize', this.resize);
   },
   componentDidMount: function(){
     this.listener = UserStore.addListener(this._onChange);
@@ -24,16 +28,25 @@ var Header = React.createClass({
   },
   componentWillUnmount: function(){
     this.listener.remove();
+    window.removeEventListener('resize', this.resize);
+  },
+  resize: function(){
+    this.setState({ width: window.innerWidth });
   },
   render: function(){
+    var mobile = this.state.width <= 375 ? true : false;
+    var projectIcon = mobile ? <i className="fa fa-th" aria-hidden="true"></i> : "Projects";
     return(
       <header className="group">
         <h1>Writer's Block</h1>
-        <LogOutButton />
-        <button id="point-count">Points: {this.state.user.points}</button>
-        <Link to="/"><button>Projects</button></Link>
-        <PrizeIndex user={this.state.user} />
-        <SettingIndex user={this.state.user}/>
+        <nav>
+          <button id="point-count">{this.state.user.points}</button>
+          <Link to="/"><button>{projectIcon}</button></Link>
+          <NewProjectForm mobile={mobile}/>
+          <PrizeIndex user={this.state.user} mobile={mobile}/>
+          <SettingIndex user={this.state.user} mobile={mobile}/>
+          <LogOutButton mobile={mobile}/>
+        </nav>
       </header>
     )
   }

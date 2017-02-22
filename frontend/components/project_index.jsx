@@ -2,7 +2,6 @@ var React = require('react');
 var ProjectStore = require('../stores/project_store.js');
 var ApiUtil = require('../util/api_util.js');
 var ProjectIndexItem = require('./project_index_item.jsx');
-var NewProjectForm = require('./new_project_form.jsx');
 var Link = require('react-router').Link;
 
 var ProjectIndex = React.createClass({
@@ -39,10 +38,9 @@ var ProjectIndex = React.createClass({
     return(
       <div id="projects">
         <h1>My Projects</h1>
-        <ul>
+        <ul id="project-index">
           {projectItems}
         </ul>
-        <NewProjectForm />
       </div>
     )
   }

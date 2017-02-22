@@ -12,7 +12,8 @@ var LogOutButton = React.createClass({
   },
 
   render: function(){
-    return <button onClick={this.logOut}>Log Out</button>
+    var buttonContent = this.props.mobile ? <i className="fa fa-sign-out" aria-hidden="true"></i> : "Log Out";
+    return <button onClick={this.logOut}>{buttonContent}</button>
   }
 
 });

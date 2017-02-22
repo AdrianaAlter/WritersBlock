@@ -2,128 +2,135 @@
 
 #welcome {
   background: $bronze;
-  height: 100vh;
-  width: 100vw;
   display: flex;
+  height: 100vh;
   justify-content: center;
+  width: 100vw;
   div {
-    width: 90%;
-    height: 90%;
+    background: $lighterbronze;
     border-radius: .5%;
-    background: lighten($bronze, 10%);
-    box-shadow: .15vh .15vh 2vh darken($bronze, 30%), -.5vh -.5vh 6vh darken($bronze, 30%);
-    margin: auto;
+    box-shadow: .15vh .15vh 2vh $bronzeshadow, -.5vh -.5vh 6vh $bronzeshadow;
     display: flex;
     flex-direction: column;
+    height: 90%;
     justify-content: center;
+    margin: auto;
+    width: 90%;
+    h1 {
+      color: $blue;
+      flex-basis: 30%;
+      font-family: $font;
+      font-size: 10vh;
+      padding: 2vh 0;
+      text-align: center;
+      @media #{$phone}{
+        font-size: 15vw;
+        margin-top: 10vh;
+      }
+    }
     @media #{$phone} {
-      width: 94%;
       height: 97%;
+      width: 94%;
     }
   }
 }
 
 .welcome-buttons {
-  width: 100%;
   display: flex;
-  justify-content: center;
   font-family: $font;
+  justify-content: center;
+  width: 100%;
   @media #{$phone}{
-    width: 80%;
-    margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
   }
   section {
     flex-basis: 20%;
     margin: 0 1vw;
   }
   button {
-    font-size: 5vh;
-    width: 100%;
-    margin: 0;
-    float: none;
-    height: 10vh;
     background-color: $blue;
     color: $lightbronze;
+    float: none;
+    font-size: 5vh;
+    height: 10vh;
+    margin: 0;
     text-align: center;
     transition: background-color 2s, color 2s, box-shadow 2s;
+    width: 100%;
     &:hover {
       background-color: $bronze;
-      color: $darkbronze;
       box-shadow: inset 1vh 1vh 4vh $darkbronze;
+      color: $darkbronze;
     }
     &:active {
       background-color: $bronze;
-      color: $darkbronze;
       box-shadow: inset 1vh 1vh 4vh $darkbronze;
+      color: $darkbronze;
     }
     @media #{$phone}{
-      width: 100%;
       float: none;
       margin: 0 0 1vh 0;
+      width: 100%;
     }
   }
 }
 
-
-#welcome h1 {
-  color: $blue;
-  padding: 2vh 0;
-  font-size: 10vh;
-  font-family: $font;
-  text-align: center;
-  flex-basis: 30%;
-  @media #{$phone}{
-    font-size: 15vw;
-    margin-top: 10vh;
-  }
-}
-
-
 form {
+  background: $bronze;
+  border: 1.5vw ridge $lighterbronze;
+  border-radius: 1%;
+  box-shadow: inset 1.25vh 1.25vh 4vh $darkbronze;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 66%;
   height: 100%;
-  border: 1.5vw ridge lighten($bronze, 10%);
-  box-shadow: inset 1.25vh 1.25vh 4vh $darkbronze;
+  margin: 0 auto;
   padding: 5vh;
-  border-radius: 1%;
-  background: $bronze;
+  width: 66%;
   @media #{$phone} {
     width: 100%;
   }
   h1 {
-    margin: 2vh 0;
     color: $blue;
     font-size: 8vh;
     font-family: $font;
+    margin: 2vh 0;
     text-align: center;
     @media #{$phone} {
       font-size: 10vw;
+      margin: 0;
     }
   }
-
+  fieldset {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    margin: 1vh auto;
+    width: 80%;
+    @media #{$phone} {
+      width: 100%;
+    }
+  }
   input {
-    margin: 0 auto;
-    font-size: 5vh;
-    font-family: $cursive;
+    background: $darkerbronze;
+    border-radius: 5%;
+    box-shadow: inset 1vh 1vh 4vh $darkbronze;
     color: $darkbronze;
-    height: 10vh;
-    width: 30vw;
+    flex-basis: 40%;
+    font-family: $cursive;
+    font-size: 5vh;
+    margin: 1vh auto;
     padding-left: 1vw;
     padding-top: 1vh;
-    border-radius: 5%;
-    background: darken($bronze, 10%);
-    box-shadow: inset 1vh 1vh 4vh $darkbronze;
+    transition: border 1s;
+    width: 100%;
     @media #{$phone}{
       font-size: 6vw;
-      width: 100%;
       height: 12%;
       padding-left: 2vw;
+      width: 100%;
     }
   }
   input:hover, input:active {
@@ -133,18 +140,17 @@ form {
     margin-top: 2vh;
     button {
       flex-basis: 25%;
-      margin: 0 1vw;
       height: 10vh;
+      margin: 0 1vw;
       &:hover {
-        background: darken($bronze, 10%);
+        background: $darkerbronze;
       }
     }
     @media #{$phone} {
-      flex-direction: column;
-      justify-content: space-between;
+      width: 100%;
       button {
+        margin: .5vh 0;
         width: 100%;
-        margin: 1vh 0;
       }
     }
   }

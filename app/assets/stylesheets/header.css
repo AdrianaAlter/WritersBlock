@@ -1,0 +1,89 @@
+header {
+  background: #CEAA78;
+  height: 8vh;
+  padding: 1vh;
+  width: 100%;
+  overflow: visible; }
+  @media only screen and (max-width: 1600px) and (orientation: portrait) {
+    header {
+      margin: 0; } }
+  header h1 {
+    color: #342613;
+    display: block;
+    float: left;
+    font-family: "Dancing Script", cursive;
+    font-size: 5vh;
+    height: 100%;
+    margin: 0 !important; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      header h1 {
+        font-size: 6vw;
+        width: 35%; } }
+  header nav {
+    display: flex;
+    float: right;
+    height: 100%;
+    width: 40%; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      header nav {
+        float: left;
+        width: 60%;
+        margin-left: 2%; }
+        header nav button, header nav a, header nav div {
+          line-height: 1vh; } }
+  header #point-count {
+    font-weight: bold; }
+    header #point-count:hover {
+      background: #133359;
+      color: #CEAA78;
+      cursor: default; }
+
+#project-form {
+  justify-content: space-between; }
+  @media only screen and (max-width: 1600px) and (orientation: portrait) {
+    #project-form {
+      position: absolute;
+      left: 5%;
+      height: 30%;
+      width: 90%;
+      padding: 2vw;
+      justify-content: center; }
+      #project-form h1 {
+        display: none; }
+      #project-form input {
+        flex-basis: 60%;
+        margin: 0;
+        font-size: 10vw;
+        text-align: left; }
+      #project-form .welcome-buttons {
+        flex-direction: row;
+        margin-top: 1vh;
+        justify-content: center;
+        flex-basis: 33%; }
+        #project-form .welcome-buttons button {
+          margin: 0 1vw;
+          height: 100%; } }
+
+#project-input {
+  flex-basis: 20%; }
+
+#form-button {
+  overflow: visible; }
+
+#form-button > i {
+  padding-top: 1vh; }
+
+#form-wrapper {
+  width: 80vw;
+  height: 30vh;
+  background: #133359;
+  overflow: visible; }
+
+nav > button, nav a, nav div {
+  flex-basis: 20%;
+  margin: 0 .25vw; }
+
+nav a > button, nav div > button {
+  width: 100%; }
+
+/*# sourceMappingURL=header.css.map */

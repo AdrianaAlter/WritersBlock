@@ -35,6 +35,7 @@ var PrizeIndex = React.createClass({
             bottom: '5vh'
           }
     };
+    var buttonContent = this.props.mobile ? <i className="fa fa-gift" aria-hidden="true"></i> : "Prizes";
     var self = this;
     var categoryItems;
     if (!this.state.prizes){
@@ -47,7 +48,7 @@ var PrizeIndex = React.createClass({
     }
     return (
       <div>
-        <button onClick={this.toggle}>Prizes</button>
+        <button onClick={this.toggle}>{buttonContent}</button>
         <Modal style={style} contentLabel="Modal" isOpen={this.state.modalIsOpen} onRequestClose={this.toggle}>
           <div id="prize-store" className="group">
             <h1>All Prizes</h1>

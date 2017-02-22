@@ -28,9 +28,10 @@ var Body = React.createClass({
   render: function(){
     var style = {color: this.props.color, fontFamily: this.props.fontFamily}
     var color = {color: this.props.color};
+    var value = this.state.text ? this.state.text : "";
     return(
       <section id="holder" className={this.props.frame + " group"}>
-        <textarea value={this.state.text} onChange={this.update} className={this.props.paper} style={style}></textarea>
+        <textarea value={value} onChange={this.update} className={this.props.paper} style={style}></textarea>
         <section id="buttons" className={this.props.paper} style={color}>
           <section>{this.state.count}</section>
           <button onClick={this.save}>Save</button>

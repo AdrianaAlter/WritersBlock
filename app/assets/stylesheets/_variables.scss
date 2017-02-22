@@ -1,9 +1,17 @@
-// $phone:  "only screen and (max-width: 860px) and (orientation: portrait)";
 $phone:  "only screen and (max-width: 1600px) and (orientation: portrait)";
+
 $bronze: #CEAA78;
-$blue: #133359;
-$darkbronze: darken($bronze, 50%);
 $lightbronze: lighten($bronze, 20%);
+$lighterbronze: lighten($bronze, 10%);
+$darkerbronze: darken($bronze, 10%);
+$bronzeshadow: darken($bronze, 30%);
+$darkbronze: darken($bronze, 50%);
+
+$blue: #133359;
+
 $font: 'Dancing Script', cursive;
 $serif: 'Vesper Libre', serif;
 $cursive: 'Oregano', cursive;
+
+$filter: transparentize($bronze, .8);
+$darkfilter: transparentize($darkbronze, .5);

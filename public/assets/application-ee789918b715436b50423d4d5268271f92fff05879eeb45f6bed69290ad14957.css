@@ -1,0 +1,1883 @@
+header {
+  background: #CEAA78;
+  height: 8vh;
+  padding: 1vh;
+  width: 100%;
+  overflow: visible; }
+  @media only screen and (max-width: 1600px) and (orientation: portrait) {
+    header {
+      margin: 0; } }
+  header h1 {
+    color: #342613;
+    display: block;
+    float: left;
+    font-family: "Dancing Script", cursive;
+    font-size: 5vh;
+    height: 100%;
+    margin: 0 !important; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      header h1 {
+        font-size: 6vw;
+        width: 35%; } }
+  header nav {
+    display: flex;
+    float: right;
+    height: 100%;
+    width: 40%; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      header nav {
+        float: left;
+        width: 60%;
+        margin-left: 2%; }
+        header nav button, header nav a, header nav div {
+          line-height: 1vh; } }
+  header #point-count {
+    font-weight: bold; }
+    header #point-count:hover {
+      background: #133359;
+      color: #CEAA78;
+      cursor: default; }
+
+#project-form {
+  justify-content: space-between; }
+  @media only screen and (max-width: 1600px) and (orientation: portrait) {
+    #project-form {
+      position: absolute;
+      left: 5%;
+      height: 30%;
+      width: 90%;
+      padding: 2vw;
+      justify-content: center; }
+      #project-form h1 {
+        display: none; }
+      #project-form input {
+        flex-basis: 60%;
+        margin: 0;
+        font-size: 10vw;
+        text-align: left; }
+      #project-form .welcome-buttons {
+        flex-direction: row;
+        margin-top: 1vh;
+        justify-content: center;
+        flex-basis: 33%; }
+        #project-form .welcome-buttons button {
+          margin: 0 1vw;
+          height: 100%; } }
+
+#project-input {
+  flex-basis: 20%; }
+
+#form-button {
+  overflow: visible; }
+
+#form-button > i {
+  padding-top: 1vh; }
+
+#form-wrapper {
+  width: 80vw;
+  height: 30vh;
+  background: #133359;
+  overflow: visible; }
+
+nav > button, nav a, nav div {
+  flex-basis: 20%;
+  margin: 0 .25vw; }
+
+nav a > button, nav div > button {
+  width: 100%; }
+
+/*# sourceMappingURL=header.css.map */
+/* line 3, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+header {
+  background: #CEAA78;
+  height: 8vh;
+  padding: 1vh;
+  width: 100%;
+  overflow: visible;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 3, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+  header {
+    margin: 0;
+  }
+}
+/* line 13, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+header h1 {
+  color: #342613;
+  display: block;
+  float: left;
+  font-family: "Dancing Script", cursive;
+  font-size: 5vh;
+  height: 100%;
+  margin: 0 !important;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 13, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+  header h1 {
+    font-size: 6vw;
+    width: 35%;
+  }
+}
+/* line 27, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+header nav {
+  display: flex;
+  float: right;
+  height: 100%;
+  width: 40%;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 27, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+  header nav {
+    float: left;
+    width: 60%;
+    margin-left: 2%;
+  }
+  /* line 36, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+  header nav button, header nav a, header nav div {
+    line-height: 1vh;
+  }
+}
+/* line 42, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+header #point-count {
+  font-weight: bold;
+}
+/* line 44, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+header #point-count:hover {
+  background: #133359;
+  color: #CEAA78;
+  cursor: default;
+}
+
+/* line 52, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+#project-form {
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 52, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+  #project-form {
+    position: absolute;
+    left: 5%;
+    height: 30%;
+    width: 90%;
+    padding: 2vw;
+    justify-content: center;
+  }
+  /* line 61, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+  #project-form h1 {
+    display: none;
+  }
+  /* line 64, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+  #project-form input {
+    flex-basis: 60%;
+    margin: 0;
+    font-size: 10vw;
+    text-align: left;
+  }
+  /* line 70, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+  #project-form .welcome-buttons {
+    flex-direction: row;
+    margin-top: 1vh;
+    justify-content: center;
+    flex-basis: 33%;
+  }
+  /* line 75, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+  #project-form .welcome-buttons button {
+    margin: 0 1vw;
+    height: 100%;
+  }
+}
+
+/* line 82, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+#project-input {
+  flex-basis: 20%;
+}
+
+/* line 85, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+#form-button {
+  overflow: visible;
+}
+
+/* line 88, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+#form-button > i {
+  padding-top: 1vh;
+}
+
+/* line 91, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+#form-wrapper {
+  width: 80vw;
+  height: 30vh;
+  background: #133359;
+  overflow: visible;
+}
+
+/* line 102, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+nav > button, nav a, nav div {
+  flex-basis: 20%;
+  margin: 0 .25vw;
+}
+
+/* line 106, /home/adriana/Desktop/WB/app/assets/stylesheets/header.scss */
+nav a > button, nav div > button {
+  width: 100%;
+}
+#prize-store button, #settings button {
+  background-color: #CEAA78;
+  color: #342613;
+  float: none;
+  font-size: 5vh;
+  height: 10vh;
+  margin: auto;
+  text-align: center;
+  transition: background 1s, color 1s;
+  width: 16vw; }
+  @media only screen and (max-width: 1600px) and (orientation: portrait) {
+    #prize-store button, #settings button {
+      font-size: 4vh;
+      width: 18vw; } }
+
+#prize-store button:hover, #settings button:hover {
+  background: #342613;
+  color: #e9d9c3; }
+
+#prize-store h1, #settings h1 {
+  color: #CEAA78;
+  font-family: "Dancing Script", cursive;
+  font-size: 8vh;
+  margin-top: 2vh;
+  text-align: center; }
+  @media only screen and (max-width: 1600px) and (orientation: portrait) {
+    #prize-store h1, #settings h1 {
+      font-size: 8vw;
+      margin-top: 1vh; } }
+
+.category .cat-list {
+  background-color: rgba(206, 170, 120, 0.9);
+  border-radius: 0 0 1vh 1vh;
+  display: flex;
+  flex-wrap: wrap;
+  height: 30vh;
+  list-style: none;
+  margin: 0 auto 4vh auto;
+  overflow-y: scroll;
+  padding: 1vh 2vh;
+  width: 90%; }
+.category .cat-header {
+  background-color: #342613;
+  border-radius: 1vh 1vh 0 0;
+  font-family: 'Oregano', cursive;
+  font-size: 2.5vh;
+  font-weight: normal;
+  height: 6vh;
+  letter-spacing: .1vw;
+  margin: 2vh auto 0 auto;
+  width: 90%; }
+  .category .cat-header h2 {
+    color: #e9d9c3;
+    display: inline;
+    line-height: 6vh;
+    margin: 0 1vw;
+    padding: 0;
+    width: 5vw; }
+  .category .cat-header .cat-name {
+    float: 1eft; }
+  .category .cat-header .cat-price {
+    float: right; }
+
+.prize {
+  background-color: #133359;
+  background-size: contain !important;
+  border: 1vh solid rgba(233, 217, 195, 0.9);
+  border-radius: 10%;
+  color: #CEAA78;
+  cursor: pointer;
+  font-size: 20px;
+  height: 12vh;
+  line-height: 10vh;
+  list-style: none;
+  margin: 1vh;
+  position: relative;
+  text-align: center;
+  width: 12vh; }
+  @media only screen and (max-width: 1600px) and (orientation: portrait) {
+    .prize {
+      border-width: .4vw;
+      font-size: 3vw;
+      height: 15vw;
+      line-height: 4vh;
+      margin: .4vw;
+      width: 15vw; } }
+
+.prize:hover {
+  box-shadow: 1px 1px 2px #342613; }
+
+.locked {
+  opacity: .7; }
+
+.locked:hover, .bought:hover {
+  box-shadow: none; }
+
+.bought, .locked {
+  cursor: default; }
+
+.bought:before, .new:after {
+  background: rgba(233, 217, 195, 0.8);
+  border-radius: 50px;
+  color: #133359;
+  content: "OWNED";
+  font-family: serif !important;
+  font-size: 2.5vh;
+  height: 100%;
+  left: 0%;
+  line-height: 11vh;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 1px #342613;
+  width: 100%; }
+  @media only screen and (max-width: 1600px) and (orientation: portrait) {
+    .bought:before, .new:after {
+      font-size: 3vw;
+      line-height: 8.5vh; } }
+
+.new {
+  overflow: hidden;
+  position: relative; }
+
+.new:before {
+  background: linear-gradient(#0f0b05, #342613, #CEAA78, #e9d9c3, #CEAA78, #342613, #0f0b05);
+  box-shadow: 3px 3px 5px #0f0b05;
+  content: "";
+  height: 10vh;
+  left: 10%;
+  position: absolute;
+  top: -25%;
+  transform: rotate(45deg);
+  width: 1.5vh;
+  z-index: 2; }
+
+.new:after {
+  color: #A51212;
+  content: "NEW!"; }
+
+#settings .selected {
+  border-color: #342613; }
+#settings .cat-list {
+  font-family: "Vesper Libre", serif; }
+
+/*# sourceMappingURL=prizes.css.map */
+/* line 6, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+#prize-store button, #settings button {
+  background-color: #CEAA78;
+  color: #342613;
+  float: none;
+  font-size: 5vh;
+  height: 10vh;
+  margin: auto;
+  text-align: center;
+  transition: background 1s, color 1s;
+  width: 16vw;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 6, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+  #prize-store button, #settings button {
+    font-size: 4vh;
+    width: 18vw;
+  }
+}
+
+/* line 21, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+#prize-store button:hover, #settings button:hover {
+  background: #342613;
+  color: #e9d9c3;
+}
+
+/* line 25, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+#prize-store h1, #settings h1 {
+  color: #CEAA78;
+  font-family: "Dancing Script", cursive;
+  font-size: 8vh;
+  margin-top: 2vh;
+  text-align: center;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 25, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+  #prize-store h1, #settings h1 {
+    font-size: 8vw;
+    margin-top: 1vh;
+  }
+}
+
+/* line 37, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.category .cat-list {
+  background-color: rgba(206, 170, 120, 0.9);
+  border-radius: 0 0 1vh 1vh;
+  display: flex;
+  flex-wrap: wrap;
+  height: 30vh;
+  list-style: none;
+  margin: 0 auto 4vh auto;
+  overflow-y: scroll;
+  padding: 1vh 2vh;
+  width: 90%;
+}
+/* line 49, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.category .cat-header {
+  background-color: #342613;
+  border-radius: 1vh 1vh 0 0;
+  font-family: 'Oregano', cursive;
+  font-size: 2.5vh;
+  font-weight: normal;
+  height: 6vh;
+  letter-spacing: .1vw;
+  margin: 2vh auto 0 auto;
+  width: 90%;
+}
+/* line 59, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.category .cat-header h2 {
+  color: #e9d9c3;
+  display: inline;
+  line-height: 6vh;
+  margin: 0 1vw;
+  padding: 0;
+  width: 5vw;
+}
+/* line 67, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.category .cat-header .cat-name {
+  float: 1eft;
+}
+/* line 70, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.category .cat-header .cat-price {
+  float: right;
+}
+
+/* line 76, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.prize {
+  background-color: #133359;
+  background-size: contain !important;
+  border: 1vh solid rgba(233, 217, 195, 0.9);
+  border-radius: 10%;
+  color: #CEAA78;
+  cursor: pointer;
+  font-size: 20px;
+  height: 12vh;
+  line-height: 10vh;
+  list-style: none;
+  margin: 1vh;
+  position: relative;
+  text-align: center;
+  width: 12vh;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 76, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+  .prize {
+    border-width: .4vw;
+    font-size: 3vw;
+    height: 15vw;
+    line-height: 4vh;
+    margin: .4vw;
+    width: 15vw;
+  }
+}
+
+/* line 100, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.prize:hover {
+  box-shadow: 1px 1px 2px #342613;
+}
+
+/* line 103, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.locked {
+  opacity: .7;
+}
+
+/* line 106, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.locked:hover, .bought:hover {
+  box-shadow: none;
+}
+
+/* line 109, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.bought, .locked {
+  cursor: default;
+}
+
+/* line 112, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.bought:before, .new:after {
+  background: rgba(233, 217, 195, 0.8);
+  border-radius: 50px;
+  color: #133359;
+  content: "OWNED";
+  font-family: serif !important;
+  font-size: 2.5vh;
+  height: 100%;
+  left: 0%;
+  line-height: 11vh;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 1px #342613;
+  width: 100%;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 112, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+  .bought:before, .new:after {
+    font-size: 3vw;
+    line-height: 8.5vh;
+  }
+}
+
+/* line 131, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.new {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 135, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.new:before {
+  background: linear-gradient(#0f0b05, #342613, #CEAA78, #e9d9c3, #CEAA78, #342613, #0f0b05);
+  box-shadow: 3px 3px 5px #0f0b05;
+  content: "";
+  height: 10vh;
+  left: 10%;
+  position: absolute;
+  top: -25%;
+  transform: rotate(45deg);
+  width: 1.5vh;
+  z-index: 2;
+}
+
+/* line 147, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+.new:after {
+  color: #A51212;
+  content: "NEW!";
+}
+
+/* line 153, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+#settings .selected {
+  border-color: #342613;
+}
+/* line 156, /home/adriana/Desktop/WB/app/assets/stylesheets/prizes.scss */
+#settings .cat-list {
+  font-family: "Vesper Libre", serif;
+}
+#projects {
+  background: rgba(206, 170, 120, 0.2);
+  color: #CEAA78;
+  height: 92vh;
+  text-align: center;
+  width: 100vw; }
+  @media only screen and (max-width: 1600px) and (orientation: portrait) {
+    #projects {
+      margin: 0; } }
+  #projects h1 {
+    color: #133359;
+    font-family: "Dancing Script", cursive;
+    font-size: 8vh;
+    line-height: 12vh; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      #projects h1 {
+        font-size: 8vw;
+        line-height: normal;
+        margin: 1vh auto; } }
+  #projects h2 {
+    font-family: "Oregano", cursive;
+    font-size: 6vh;
+    font-weight: normal;
+    margin: 0; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      #projects h2 {
+        font-size: 4vw; } }
+  #projects h3 {
+    font-family: "Vesper Libre", serif;
+    font-size: 3vh;
+    margin: 0; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      #projects h3 {
+        font-size: 4vw; } }
+  #projects #project-index {
+    background: #CEAA78;
+    border-radius: .5%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Dancing Script", cursive;
+    margin: auto;
+    min-height: 60vh;
+    overflow-y: scroll;
+    padding: 1%;
+    width: 95%; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      #projects #project-index {
+        max-height: 60vh;
+        min-height: 0vh;
+        overflow-y: scroll; } }
+    #projects #project-index .project-item {
+      background: #133359;
+      border-radius: 3%;
+      color: #CEAA78;
+      flex-basis: 22%;
+      height: 20vh;
+      margin: .5vh .5vw;
+      padding: 1%;
+      transition: background 1s, color 1.5s; }
+      #projects #project-index .project-item li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+      #projects #project-index .project-item:hover {
+        background: #342613;
+        color: #e9d9c3; }
+      @media only screen and (max-width: 1600px) and (orientation: portrait) {
+        #projects #project-index .project-item {
+          flex-basis: 32%;
+          height: 10vh;
+          margin: .25vh .25vw; } }
+  #projects button {
+    background-color: #133359;
+    color: #CEAA78;
+    float: none;
+    font-size: 5vh;
+    height: 10vh;
+    margin: auto;
+    text-align: center;
+    width: 16vw; }
+  #projects button:hover {
+    background: #342613;
+    color: #e9d9c3; }
+
+#detail {
+  background-color: rgba(206, 170, 120, 0.2);
+  height: 89vh;
+  padding-bottom: 1vh; }
+  #detail h1 {
+    color: transparent;
+    text-align: center; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      #detail h1 {
+        display: none; } }
+  #detail #holder {
+    background-color: #133359;
+    border-radius: 2%;
+    box-shadow: 4px 6px 2px black, -4px 0px 2px black;
+    display: flex;
+    height: 88%;
+    margin: 2% auto 0 auto;
+    padding: 4%;
+    width: 88%; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      #detail #holder {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 4vh;
+        box-shadow: .3vh .5vh 3vh black, -.3vh 0vh 3vh black; } }
+    #detail #holder textarea {
+      background-color: #CEAA78;
+      box-shadow: inset 3px 3px 2px black;
+      display: block;
+      font-size: 3vh;
+      height: 100%;
+      overflow-y: scroll;
+      padding: 2%;
+      width: 80%; }
+      @media only screen and (max-width: 1600px) and (orientation: portrait) {
+        #detail #holder textarea {
+          font-size: 5vw;
+          height: 80%;
+          margin: 0 auto;
+          width: 100%; } }
+    #detail #holder #buttons {
+      background-color: #CEAA78;
+      box-shadow: inset 3px 3px 2px black;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-left: 4%;
+      width: 16%; }
+      @media only screen and (max-width: 1600px) and (orientation: portrait) {
+        #detail #holder #buttons {
+          flex-direction: row;
+          float: none;
+          height: 12%;
+          margin: 3vh auto 0 auto;
+          width: 100%; } }
+      #detail #holder #buttons button {
+        background-color: rgba(52, 38, 19, 0.5);
+        border-radius: 0;
+        box-shadow: inset 3px 0px 2px black;
+        color: #e9d9c3;
+        float: none;
+        font-size: 5vh;
+        height: 12%;
+        overflow: hidden;
+        margin-top: 1vh;
+        width: 100%;
+        text-align: center;
+        transition: background 1s; }
+        @media only screen and (max-width: 1600px) and (orientation: portrait) {
+          #detail #holder #buttons button {
+            border: 0.2vw solid #342613;
+            box-shadow: none;
+            flex-basis: 30%;
+            font-size: 10vw;
+            height: 100%;
+            margin: 0; } }
+      #detail #holder #buttons button:hover {
+        background: rgba(52, 38, 19, 0.8); }
+      #detail #holder #buttons section {
+        font-size: 8vh;
+        margin: 25% auto 20vh auto;
+        overflow-y: hidden;
+        text-align: center; }
+        @media only screen and (max-width: 1600px) and (orientation: portrait) {
+          #detail #holder #buttons section {
+            flex-basis: 40%;
+            font-size: 12vw;
+            height: 100%;
+            line-height: 125%;
+            margin: 0; } }
+
+/*# sourceMappingURL=projects.css.map */
+/* line 3, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#projects {
+  background: rgba(206, 170, 120, 0.2);
+  color: #CEAA78;
+  height: 92vh;
+  text-align: center;
+  width: 100vw;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 3, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #projects {
+    margin: 0;
+  }
+}
+/* line 12, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#projects h1 {
+  color: #133359;
+  font-family: "Dancing Script", cursive;
+  font-size: 8vh;
+  line-height: 12vh;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 12, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #projects h1 {
+    font-size: 8vw;
+    line-height: normal;
+    margin: 1vh auto;
+  }
+}
+/* line 23, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#projects h2 {
+  font-family: "Oregano", cursive;
+  font-size: 6vh;
+  font-weight: normal;
+  margin: 0;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 23, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #projects h2 {
+    font-size: 4vw;
+  }
+}
+/* line 32, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#projects h3 {
+  font-family: "Vesper Libre", serif;
+  font-size: 3vh;
+  margin: 0;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 32, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #projects h3 {
+    font-size: 4vw;
+  }
+}
+/* line 40, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#projects #project-index {
+  background: #CEAA78;
+  border-radius: .5%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Dancing Script", cursive;
+  margin: auto;
+  min-height: 60vh;
+  overflow-y: scroll;
+  padding: 1%;
+  width: 95%;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 40, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #projects #project-index {
+    max-height: 60vh;
+    min-height: 0vh;
+    overflow-y: scroll;
+  }
+}
+/* line 56, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#projects #project-index .project-item {
+  background: #133359;
+  border-radius: 3%;
+  color: #CEAA78;
+  flex-basis: 22%;
+  height: 20vh;
+  margin: .5vh .5vw;
+  padding: 1%;
+  transition: background 1s, color 1.5s;
+}
+/* line 65, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#projects #project-index .project-item li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 70, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#projects #project-index .project-item:hover {
+  background: #342613;
+  color: #e9d9c3;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 56, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #projects #project-index .project-item {
+    flex-basis: 32%;
+    height: 10vh;
+    margin: .25vh .25vw;
+  }
+}
+/* line 81, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#projects button {
+  background-color: #133359;
+  color: #CEAA78;
+  float: none;
+  font-size: 5vh;
+  height: 10vh;
+  margin: auto;
+  text-align: center;
+  width: 16vw;
+}
+/* line 91, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#projects button:hover {
+  background: #342613;
+  color: #e9d9c3;
+}
+
+/* line 97, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#detail {
+  background-color: rgba(206, 170, 120, 0.2);
+  height: 89vh;
+  padding-bottom: 1vh;
+}
+/* line 101, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#detail h1 {
+  color: transparent;
+  text-align: center;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 101, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #detail h1 {
+    display: none;
+  }
+}
+/* line 108, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#detail #holder {
+  background-color: #133359;
+  border-radius: 2%;
+  box-shadow: 4px 6px 2px black, -4px 0px 2px black;
+  display: flex;
+  height: 88%;
+  margin: 2% auto 0 auto;
+  padding: 4%;
+  width: 88%;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 108, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #detail #holder {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 4vh;
+    box-shadow: .3vh .5vh 3vh black, -.3vh 0vh 3vh black;
+  }
+}
+/* line 125, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#detail #holder textarea {
+  background-color: #CEAA78;
+  box-shadow: inset 3px 3px 2px black;
+  display: block;
+  font-size: 3vh;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 2%;
+  width: 80%;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 125, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #detail #holder textarea {
+    font-size: 5vw;
+    height: 80%;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+/* line 141, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#detail #holder #buttons {
+  background-color: #CEAA78;
+  box-shadow: inset 3px 3px 2px black;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 4%;
+  width: 16%;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 141, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #detail #holder #buttons {
+    flex-direction: row;
+    float: none;
+    height: 12%;
+    margin: 3vh auto 0 auto;
+    width: 100%;
+  }
+}
+/* line 157, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#detail #holder #buttons button {
+  background-color: rgba(52, 38, 19, 0.5);
+  border-radius: 0;
+  box-shadow: inset 3px 0px 2px black;
+  color: #e9d9c3;
+  float: none;
+  font-size: 5vh;
+  height: 12%;
+  overflow: hidden;
+  margin-top: 1vh;
+  width: 100%;
+  text-align: center;
+  transition: background 1s;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 157, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #detail #holder #buttons button {
+    border: 0.2vw solid #342613;
+    box-shadow: none;
+    flex-basis: 30%;
+    font-size: 10vw;
+    height: 100%;
+    margin: 0;
+  }
+}
+/* line 179, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#detail #holder #buttons button:hover {
+  background: rgba(52, 38, 19, 0.8);
+}
+/* line 182, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+#detail #holder #buttons section {
+  font-size: 8vh;
+  margin: 25% auto 20vh auto;
+  overflow-y: hidden;
+  text-align: center;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 182, /home/adriana/Desktop/WB/app/assets/stylesheets/projects.scss */
+  #detail #holder #buttons section {
+    flex-basis: 40%;
+    font-size: 12vw;
+    height: 100%;
+    line-height: 125%;
+    margin: 0;
+  }
+}
+#welcome {
+  background: #CEAA78;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw; }
+  #welcome div {
+    background: #dcc29d;
+    border-radius: .5%;
+    box-shadow: 0.15vh 0.15vh 2vh #7f5d2e, -0.5vh -0.5vh 6vh #7f5d2e;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: center;
+    margin: auto;
+    width: 90%; }
+    #welcome div h1 {
+      color: #133359;
+      flex-basis: 30%;
+      font-family: "Dancing Script", cursive;
+      font-size: 10vh;
+      padding: 2vh 0;
+      text-align: center; }
+      @media only screen and (max-width: 1600px) and (orientation: portrait) {
+        #welcome div h1 {
+          font-size: 15vw;
+          margin-top: 10vh; } }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      #welcome div {
+        height: 97%;
+        width: 94%; } }
+
+.welcome-buttons {
+  display: flex;
+  font-family: "Dancing Script", cursive;
+  justify-content: center;
+  width: 100%; }
+  @media only screen and (max-width: 1600px) and (orientation: portrait) {
+    .welcome-buttons {
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 80%; } }
+  .welcome-buttons section {
+    flex-basis: 20%;
+    margin: 0 1vw; }
+  .welcome-buttons button {
+    background-color: #133359;
+    color: #e9d9c3;
+    float: none;
+    font-size: 5vh;
+    height: 10vh;
+    margin: 0;
+    text-align: center;
+    transition: background-color 2s, color 2s, box-shadow 2s;
+    width: 100%; }
+    .welcome-buttons button:hover {
+      background-color: #CEAA78;
+      box-shadow: inset 1vh 1vh 4vh #342613;
+      color: #342613; }
+    .welcome-buttons button:active {
+      background-color: #CEAA78;
+      box-shadow: inset 1vh 1vh 4vh #342613;
+      color: #342613; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      .welcome-buttons button {
+        float: none;
+        margin: 0 0 1vh 0;
+        width: 100%; } }
+
+form {
+  background: #CEAA78;
+  border: 1.5vw ridge #dcc29d;
+  border-radius: 1%;
+  box-shadow: inset 1.25vh 1.25vh 4vh #342613;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5vh;
+  width: 66%; }
+  @media only screen and (max-width: 1600px) and (orientation: portrait) {
+    form {
+      width: 100%; } }
+  form h1 {
+    color: #133359;
+    font-size: 8vh;
+    font-family: "Dancing Script", cursive;
+    margin: 2vh 0;
+    text-align: center; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      form h1 {
+        font-size: 10vw;
+        margin: 0; } }
+  form fieldset {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    margin: 1vh auto;
+    width: 80%; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      form fieldset {
+        width: 100%; } }
+  form input {
+    background: #c09253;
+    border-radius: 5%;
+    box-shadow: inset 1vh 1vh 4vh #342613;
+    color: #342613;
+    flex-basis: 40%;
+    font-family: "Oregano", cursive;
+    font-size: 5vh;
+    margin: 1vh auto;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    transition: border 1s;
+    width: 100%; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      form input {
+        font-size: 6vw;
+        height: 12%;
+        padding-left: 2vw;
+        width: 100%; } }
+  form input:hover, form input:active {
+    border: 0.5vh solid #133359; }
+  form .welcome-buttons {
+    margin-top: 2vh; }
+    form .welcome-buttons button {
+      flex-basis: 25%;
+      height: 10vh;
+      margin: 0 1vw; }
+      form .welcome-buttons button:hover {
+        background: #c09253; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      form .welcome-buttons {
+        width: 100%; }
+        form .welcome-buttons button {
+          margin: .5vh 0;
+          width: 100%; } }
+  form ::-webkit-input-placeholder {
+    color: #e9d9c3;
+    font-family: "Oregano", cursive; }
+  form ::-moz-placeholder {
+    color: #e9d9c3;
+    font-family: "Oregano", cursive; }
+  form :-ms-input-placeholder {
+    color: #e9d9c3;
+    font-family: "Oregano", cursive; }
+  form :-moz-placeholder {
+    color: #e9d9c3;
+    font-family: "Oregano", cursive; }
+
+/*# sourceMappingURL=sessions.css.map */
+/* line 3, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+#welcome {
+  background: #CEAA78;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+/* line 9, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+#welcome div {
+  background: #dcc29d;
+  border-radius: .5%;
+  box-shadow: 0.15vh 0.15vh 2vh #7f5d2e, -0.5vh -0.5vh 6vh #7f5d2e;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+}
+/* line 19, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+#welcome div h1 {
+  color: #133359;
+  flex-basis: 30%;
+  font-family: "Dancing Script", cursive;
+  font-size: 10vh;
+  padding: 2vh 0;
+  text-align: center;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 19, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+  #welcome div h1 {
+    font-size: 15vw;
+    margin-top: 10vh;
+  }
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 9, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+  #welcome div {
+    height: 97%;
+    width: 94%;
+  }
+}
+
+/* line 38, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+.welcome-buttons {
+  display: flex;
+  font-family: "Dancing Script", cursive;
+  justify-content: center;
+  width: 100%;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 38, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+  .welcome-buttons {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+/* line 49, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+.welcome-buttons section {
+  flex-basis: 20%;
+  margin: 0 1vw;
+}
+/* line 53, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+.welcome-buttons button {
+  background-color: #133359;
+  color: #e9d9c3;
+  float: none;
+  font-size: 5vh;
+  height: 10vh;
+  margin: 0;
+  text-align: center;
+  transition: background-color 2s, color 2s, box-shadow 2s;
+  width: 100%;
+}
+/* line 63, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+.welcome-buttons button:hover {
+  background-color: #CEAA78;
+  box-shadow: inset 1vh 1vh 4vh #342613;
+  color: #342613;
+}
+/* line 68, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+.welcome-buttons button:active {
+  background-color: #CEAA78;
+  box-shadow: inset 1vh 1vh 4vh #342613;
+  color: #342613;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 53, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+  .welcome-buttons button {
+    float: none;
+    margin: 0 0 1vh 0;
+    width: 100%;
+  }
+}
+
+/* line 81, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form {
+  background: #CEAA78;
+  border: 1.5vw ridge #dcc29d;
+  border-radius: 1%;
+  box-shadow: inset 1.25vh 1.25vh 4vh #342613;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5vh;
+  width: 66%;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 81, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+  form {
+    width: 100%;
+  }
+}
+/* line 95, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form h1 {
+  color: #133359;
+  font-size: 8vh;
+  font-family: "Dancing Script", cursive;
+  margin: 2vh 0;
+  text-align: center;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 95, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+  form h1 {
+    font-size: 10vw;
+    margin: 0;
+  }
+}
+/* line 106, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form fieldset {
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: column;
+  margin: 1vh auto;
+  width: 80%;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 106, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+  form fieldset {
+    width: 100%;
+  }
+}
+/* line 116, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form input {
+  background: #c09253;
+  border-radius: 5%;
+  box-shadow: inset 1vh 1vh 4vh #342613;
+  color: #342613;
+  flex-basis: 40%;
+  font-family: "Oregano", cursive;
+  font-size: 5vh;
+  margin: 1vh auto;
+  padding-left: 1vw;
+  padding-top: 1vh;
+  transition: border 1s;
+  width: 100%;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 116, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+  form input {
+    font-size: 6vw;
+    height: 12%;
+    padding-left: 2vw;
+    width: 100%;
+  }
+}
+/* line 136, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form input:hover, form input:active {
+  border: 0.5vh solid #133359;
+}
+/* line 139, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form .welcome-buttons {
+  margin-top: 2vh;
+}
+/* line 141, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form .welcome-buttons button {
+  flex-basis: 25%;
+  height: 10vh;
+  margin: 0 1vw;
+}
+/* line 145, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form .welcome-buttons button:hover {
+  background: #c09253;
+}
+@media only screen and (max-width: 1600px) and (orientation: portrait) {
+  /* line 139, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+  form .welcome-buttons {
+    width: 100%;
+  }
+  /* line 151, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+  form .welcome-buttons button {
+    margin: .5vh 0;
+    width: 100%;
+  }
+}
+/* line 157, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form ::-webkit-input-placeholder {
+  color: #e9d9c3;
+  font-family: "Oregano", cursive;
+}
+/* line 161, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form ::-moz-placeholder {
+  color: #e9d9c3;
+  font-family: "Oregano", cursive;
+}
+/* line 165, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form :-ms-input-placeholder {
+  color: #e9d9c3;
+  font-family: "Oregano", cursive;
+}
+/* line 169, /home/adriana/Desktop/WB/app/assets/stylesheets/sessions.scss */
+form :-moz-placeholder {
+  color: #e9d9c3;
+  font-family: "Oregano", cursive;
+}
+
+
+/*# sourceMappingURL=users.css.map */
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+ * {
+  background: transparent;
+  background-size: contain;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  overflow-x: hidden;
+}
+
+.group:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.hidden {
+  display: none;
+}
+
+ button, nav a, nav div {
+   background: #133359;
+   border: none;
+   border-radius: 4px;
+   color: #CEAA78;
+   cursor: pointer;
+   display: block;
+   font-family: 'Oregano', cursive;
+   font-size: 3vh;
+   height: 100%;
+   outline: none;
+   text-align: center;
+   transition: background 1s, color 1s;
+ }
+
+ button:hover {
+   background: #342613;
+ }
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 15px;
+
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(52, 38, 19, 0.5);
+}
+::-webkit-scrollbar-button {
+  background-color: transparent;
+}
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+
+
+
+
+.leopard {
+  background-image: url('http://orig03.deviantart.net/ba5d/f/2013/257/b/0/seamless_leopard_prints_photoshop_pattern_by_pantaeba-d6mch55.png');
+  background-size: auto;
+}
+.blue-leopard {
+  background-image: url('https://t3.ftcdn.net/jpg/01/26/65/24/240_F_126652452_ReOkGKi2E7sieRbsubweV92T6GAy84VP.jpg');
+  background-size: auto;
+}
+.zebra {
+   background-image: url('http://data.whicdn.com/images/93513121/original.png');
+   background-size: auto;
+}
+.snake-print {
+  background-image: url('https://t3.ftcdn.net/jpg/01/07/72/94/240_F_107729446_Lw5ktZncenGmFjXdaAtwOQtab9F0dqyp.jpg');
+  background-size: auto;
+}
+.black-damask {
+  background-image: url('http://i691.photobucket.com/albums/vv277/Art-of-Alteration/CSS%20Stuff/vector-seamless-damask-pattern-thum.jpg');
+  background-size: auto;
+}
+.metal1 {
+  background-image: url('http://img05.deviantart.net/286e/i/2011/343/f/b/seamless_metal_plate_by_hhh316-d4ink0a.jpg');
+}
+.whitelace {
+  background-image: url('http://cache3.asset-cache.net/xt/186455359.jpg?v=1&g=fs1%7C0%7CSKP155%7C55%7C359&s=1&b=NjFE');
+}
+.red-velvet {
+  background-image: url('http://www.socialh.com/wp-content/uploads/2013/04/AOPT24.jpg');
+  background-size: auto;
+}
+.grey-damask {
+  background-image: url('http://www.sketchuptextureclub.com/public/texture_m/0002-ramage-floral-wallpaper-dhea-by-parato-texture-seamless-bump.jpg');
+  background-size: auto;
+}
+.purple-damask {
+  background-image: url('http://images.all-free-download.com/images/graphiclarge/seamless_floral_background_vector_148132.jpg');
+  background-size: auto;
+}
+.red-rug {
+  background-image: url('http://www.commentnation.com/backgrounds/images/oriental_rug_red_seamless_carpet_background_tileable.jpg');
+  background-size: auto;
+}
+.vortex {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/236x/b7/92/56/b79256341037562b017901c49e7fadc5.jpg');
+  background-size: auto;
+}
+.green-damask {
+  background-image: url('http://colourlovers.com.s3.amazonaws.com/images/patterns/3100/3100507.png');
+  background-size: auto;
+}
+.snake {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/236x/b2/35/dd/b235ddeb1ee2e36b5c3633760d20149e.jpg');
+  background-size: auto;
+}
+.red-damask {
+  background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_red_and_black.jpg');
+  background-size: auto;
+}
+.blue-damask {
+  /*background-image: url('https://s-media-cache-ak0.pinimg.com/236x/ce/2c/b8/ce2cb813e22334864a8a51cfbd832206.jpg');*/
+  background-image: url('http://www.zingerbug.com/Backgrounds/background_images/dark_blue_ornate_floral_wallpaper_tileable.jpg');
+  background-size: auto;
+}
+
+.party {
+  background-image: url('http://freedesignfile.com/upload/2015/12/Decorative-ornate-pattern-seamless-vector-01.jpg');
+  background-size: auto;
+}
+.animals {
+  background-image: url('http://freedesignfile.com/upload/2013/11/Animals-5-280x235.jpg');
+  background-size: auto;
+}
+.pink-damask {
+  background-image: url('http://allfreedesigns.com/wp-content/uploads/2015/08/damask-patterns-6.jpg');
+  background-size: auto;
+}
+.power {
+  background-image: url('http://freedesignfile.com/upload/2016/10/Gold-laser-vector-background-02-280x235.jpg');
+  background-position: center;
+  background-size: auto;
+}
+.safari {
+  background-image: url('http://freedesignfile.com/upload/2014/10/African-style-seamless-vector-pattern-03-280x235.jpg');
+  background-size: auto;
+}
+.giraffe {
+  background-image: url('http://freedesignfile.com/upload/2015/08/Animal-fur-texture-seamless-pattern-vector-07-280x235.jpg');
+  background-size: auto;
+}
+.gold-damask {
+  background-image: url('http://www.commentnation.com/backgrounds/images/damask_wallpaper_seamless_background_gold_and_black.jpg');
+  background-size: auto;
+}
+.red-roses {
+  background-image: url('http://www.commentnation.com/backgrounds/images/red_abstract_flowers_background_texture_tiled.jpg');
+}
+.parchment {
+  background-image: url('http://www.stockvault.net/data/2011/03/19/118895/preview16.jpg');
+  background-size: cover;
+}
+.tiger {
+  background-image: url('http://freedesignfile.com/upload/2015/08/Animal-fur-texture-seamless-pattern-vector-15.jpg');
+}
+.diamonds {
+  background-image: url('http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/824/thumbs/grungy-fiery-red-seamless-patterns-3.jpg');
+  background-size: auto;
+}
+.green-circuit {
+  background-image: url('http://colourlovers.com.s3.amazonaws.com/images/patterns/3100/3100507.png');
+  background-size: contain;
+}
+.black-circuit {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/af/6d/52/af6d5228b42a6769cccaed3c96e07ec9.jpg');
+  background-size: auto;
+}
+.gold-roses {
+  background-image: url('http://freedesignfile.com/upload/2013/06/Seamless-pattern-3.jpg');
+  background-size: auto;
+}
+.green-stripes {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/736x/ac/35/79/ac3579cb4abaa693fba2c38a562f15d4.jpg');
+  background-size: auto;
+}
+.green-tiles {
+  background-image: url('http://colourlovers.com.s3.amazonaws.com/images/patterns/3518/3518825.png');
+  background-size: contain;
+}
+.birds {
+  background-image: url('http://freedesignfile.com/upload/2015/12/Birds-with-damask-pattern-seamless-vector-02.jpg');
+}
+.maze {
+  background-image: url('http://textures101.com/textures/Paper/Wallpaper/2011/10/10/tn1_4893051426b62fa08ebfo_zxjfx.jpg');
+  background-size: auto;
+}
+.math {
+  background-image: url('https://cdn.vectorstock.com/i/composite/22,24/math-seamless-pattern-background-notebook-vector-9152224.jpg');
+  background-size: auto;
+}
+.constellations {
+  background-image: url('https://static1.squarespace.com/static/507698a2e4b07864e5d06dea/t/52624f2be4b0c5267bb3675f/1382174512271/pattern-repeat-sketch-starrysky.jpg');
+}
+.fractal {
+  background-image: url('https://www.colourbox.com/preview/16003713-purple-abstract-seamless-fractal-pattern.jpg');
+  background-size: auto;
+}
+.chess {
+  background-image: url('chess.gif');
+  background-size: auto;
+}
+.deco {
+  background-image: url('deco.jpg');
+  background-size: auto;
+}
+.regal {
+  background-image: url('regal.gif');
+}
+.woodcut {
+  background-image: url('woodcut.png');
+  background-size: auto;
+}
+.dark-square {
+  background-image: url('http://freedesignfile.com/upload/2016/06/Luxury-gold-pattern-seamless-vector-09.jpg');
+  background-size: auto;
+}
+.lava-rock {
+  background-image: url('lava-rock.gif');
+  background-size: auto;
+}
+.octo {
+  background-image: url('octo.gif');
+  background-size: auto;
+}
+.coffee {
+  background-image: url('coffee.gif');
+  background-size: auto;
+}
+.spain {
+  background-image: url('spain.gif');
+  background-size: auto;
+}
+.alexandria {
+  background-image: url('alexandria.gif');
+  background-size: auto;
+}
+.brooks {
+  background-image: url('brooks.gif');
+  background-size: auto;
+}
+.northern {
+  background-image: url('northern.gif');
+  background-size: auto;
+}
+.royal {
+  background-image: url('royal.gif');
+  background-size: auto;
+}
+.salvage {
+  background-image: url('salvage.gif');
+  background-size: auto;
+}
+.steadfast {
+  background-image: url('steadfast.gif');
+  background-size: auto;
+}
+.haunted {
+  background-image: url('haunted.gif');
+  background-size: auto;
+}
+.medallion {
+  background-image: url('medallion.gif');
+  background-size: auto;
+}
+.medusa {
+  background-image: url('medusa.gif');
+  background-size: auto;
+}
+.queen {
+  background-image: url('queen.gif');
+  background-size: auto;
+}
+.antoinette {
+  background-image: url('antoinette.gif');
+  background-size: auto;
+}
+.battle {
+  background-image: url('battle.gif');
+  background-size: auto;
+}
+.avalon {
+  background-image: url('avalon.gif');
+  background-size: auto;
+}
+.coaster {
+  background-image: url('coaster.gif');
+  background-size: auto;
+}
+
+
+
+.red-floral {
+  background-image: url('http://www.commentnation.com/backgrounds/images/abstract_red_floral_wallpaper_background_seamless.jpg');
+}
+.mauve-floral {
+  background-image: url('http://www.commentnation.com/backgrounds/images/abstract_mauve_floral_wallpaper_background_seamless.jpg');
+}
+.brown-floral {
+  background-image: url('http://www.commentnation.com/backgrounds/images/abstract_brown_floral_wallpaper_background_seamless.jpg');
+}
+.green-floral {
+  background-image: url('http://www.commentnation.com/backgrounds/images/abstract_green_floral_wallpaper_background_seamless.jpg');
+}
+.rainbow-scales {
+  background-image: url('http://www.commentnation.com/backgrounds/images/colorful_abstract_diamonds_background_tiled.jpg');
+}
+.wood {
+  background-image: url('http://www.myfreetextures.com/wp-content/uploads/2014/10/texture-seamless-wood-5.jpg');
+}
+.silver {
+  background-image: url('http://previews.123rf.com/images/marabudesign/marabudesign1503/marabudesign150300009/37235394-Aluminum-Foil-Seamless-and-Tileable-Texture-Stock-Photo.jpg');
+}
+.bronze {
+  background-image: url('http://images.naldzgraphics.net/2014/08/1-old-rusty-texture.jpg');
+}
+.gold {
+  background-image: url('https://slm-assets1.secondlife.com/assets/4491071/lightbox/-KnA-%20Gold%20brushed.jpg?1319657278');
+}
+.copper {
+  background-image: url('http://www.myfreetextures.com/wp-content/uploads/2014/10/brushed-copper-texture.jpg');
+}
+.lava {
+  background-image: url('http://www.commentnation.com/backgrounds/images/abstract_red_wallpaper_background_seamless.jpg');
+}
+.leather {
+  background-image: url('http://www.texturemate.com/sites/default/files/images/Free%20Texture%20Sorensen%20Leather%2003-03-2014%2000266%20-%20Sorensen%20Leather%20-%20Winchester-cognac-40724.preview.jpg');
+}
+.alligator {
+  background-image: url('http://previews.123rf.com/images/alliedcomputergraphics/alliedcomputergraphics1206/alliedcomputergraphics120600873/14063485-Alligator-Hide-Seamless-Texture-Tile-Stock-Photo-seamless-crocodile-skin.jpg');
+}
+.quilted {
+  background-image: url('https://cdn.vectorstock.com/i/thumb-large/89/11/6618911.jpg');
+}
+.marble {
+  background-image: url('http://www.stockvault.net/data/2012/02/29/129670/preview16.jpg');
+}
+.marble2 {
+  background-image: url('http://www.sketchuptextureclub.com/public/slider/marble-collection.jpg');
+}
+.blue-marble {
+  background-image: url('http://2.bp.blogspot.com/-qqIfPnBHA64/UmpPlFoaHgI/AAAAAAAAE24/xf3QBB5F_zY/s1600/Tileable+marble+floor+tile+texture+(9).jpg');
+}
+.rose-quartz {
+  background-image: url('http://img05.deviantart.net/113a/i/2009/322/b/5/rose_quartz_seamless_texture_by_suztv.jpg');
+}
+.metal-swirl {
+  background-image: url('http://img12.deviantart.net/7d87/i/2014/049/5/6/metal_seamless_texture_18_by_jojo_ojoj-d773szm.jpg');
+}
+.embossed-swirl {
+  background-image: url('http://img02.deviantart.net/7bc5/i/2015/111/2/f/metal_seamless_texture_43_by_jojo_ojoj-d8qm8o9.jpg');
+}
+.embossed-copper {
+  background-image: url('http://pre05.deviantart.net/bf98/th/pre/i/2015/252/e/e/metal_seamless_texture_65_by_jojo_ojoj-d98yna4.jpg');
+}
+.mosaic {
+  background-image: url('http://www.commentnation.com/backgrounds/images/black_and_white_mosaic_tile_background_texture.jpg');
+}
+.green-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/forest_green_glue_chip_glass_background_seamless_texture.jpg');
+}
+.black-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/black_glue_chip_glass_background_seamless_texture.jpg');
+}
+.broken-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/broken_glass_seamless_pattern.jpg');
+}
+.red-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/red_glue_chip_glass_background_seamless_texture.jpg');
+}
+.purple-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/purple_glue_chip_glass_background_seamless_texture.jpg');
+}
+.amber-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/amber_glue_chip_glass_background_seamless_texture.jpg');
+}
+.gold-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/sepia_glue_chip_glass_background_seamless_texture.jpg');
+}
+.magenta-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/magenta_glue_chip_glass_background_seamless_texture.jpg');
+}
+.pink-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/pink_glue_chip_glass_background_seamless_texture.jpg');
+}
+.blue-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/cobalt_blue_glue_chip_glass_background_seamless_texture.jpg');
+}
+.clear-glass {
+  background-image: url('http://www.commentnation.com/backgrounds/images/glue_chip_glass_background_seamless_texture.jpg');
+}
+.ice-cubes {
+  background-image: url('http://www.commentnation.com/backgrounds/images/seamless_ice_cubes.jpg');
+}
+.leopard-fur {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/564x/71/30/a5/7130a5554291fe76076e7d5be745fcb4.jpg');
+}
+.black-swirl {
+  background-image: url('http://freedesignfile.com/upload/2015/05/Black-paper-floral-seamless-pattern-vector.jpg');
+}
+
+
+.chalkboard {
+  background-image: url('http://www.wintersetwebsites.com/wp-content/uploads/2016/01/Scratchy-Chalkboard-Texture.jpg');
+  background-size: cover;
+}
+.scroll {
+  background-image: url('http://www.commentnation.com/backgrounds/images/tan_marbled_paper_background_texture_seamless.jpg');
+}
+.papyrus {
+  background-image: url('http://img0.mxstatic.com/wallpapers/2b8aca986c77811c824a2bd8ad9f9ddc_large.jpeg');
+  background-size: cover;
+}
+.pink-paper {
+  background-image: url('http://www.zingerbug.com/Backgrounds/background_images/pink_parchment_paper_wallpaper_texture_seamless.jpg');
+  background-size: auto;
+}
+.red-paper {
+  background-image: url('http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/1191/full/deep-crimson-red-seamless-grunge-textures-16.jpg');
+}
+.gold-paper {
+  background-image: url('http://www.commentnation.com/backgrounds/images/gold_paper_texture_background_seamless_pattern.jpg');
+}
+.blue-paper {
+  background-image: url('http://images.naldzgraphics.net/2014/07/15-blue-crumpled-paper-textures.jpg');
+  background-size: auto;
+}
+.bag {
+  background-image: url('https://images.freecreatives.com/wp-content/uploads/2015/10/brown_paper_bag-texture-for-photoshop.jpg');
+  background-size: cover;
+}
+.bag2 {
+  background-image: url('https://images.freecreatives.com/wp-content/uploads/2015/10/coffee-bag-texture.jpg');
+  background-size: cover;
+}
+.pink-flecked {
+  background-image: url('http://www.photos-public-domain.com/wp-content/uploads/2011/12/rose-colored-paper-texture-with-flecks.jpg');
+  background-size: cover;
+}
+.peach-flecked {
+  background-image: url('http://www.photos-public-domain.com/wp-content/uploads/2011/12/peach-colored-paper-texture-with-flecks.jpg');
+  background-size: auto;
+}
+.red-flecked {
+  background-image: url('http://www.photos-public-domain.com/wp-content/uploads/2011/11/deep-red-paper-texture-with-flecks.jpg');
+  background-size: cover;
+}
+.light-green-paper {
+  background-image: url('http://www.lcpackaging.com.au/components/com_virtuemart/shop_image/product/Lime_Green_Tissu_50a1d55442381.jpg');
+  background-size: cover;
+}
+.black-paper {
+  background-image: url('http://www.photos-public-domain.com/wp-content/uploads/2012/05/black-paper-texture.jpg');
+  background-size: cover;
+}
+.tan-paper {
+  background-image: url('http://www.wildtextures.com/wp-content/uploads/wildtextures-just-paper-seamless-texture-480x480.jpg');
+  background-size: auto;
+}
+.grey-paper {
+  background-image: url('https://superdevresources.com/wp-content/uploads/2014/08/colored-vintage-paper-texture.jpg');
+  background-size: cover;
+}
+.cardboard {
+  background-image: url('https://inspirationhut.net/wp-content/uploads/2012/11/Brown-Cardboard-Paper-Texture.jpg');
+  background-size: cover;
+}
+.stained {
+  background-image: url('http://i0.wp.com/www.ucreative.com/wp-content/uploads/2010/08/8-untitled.jpg?resize=500%2C300');
+  background-size: cover;
+}
+.cracked {
+  background-image: url('http://i0.wp.com/www.ucreative.com/wp-content/uploads/2010/08/38-old-paper-41.jpg?resize=500%2C300');
+  background-size: cover;
+}
+.patterned {
+  background-image: url('http://i2.wp.com/www.ucreative.com/wp-content/uploads/2010/08/42-warm-desire-1.jpg?resize=500%2C300');
+  background-size: cover;
+}
+.slate {
+  background-image: url('https://c2.staticflickr.com/6/5164/5290154654_4d8949fb71_z.jpg');
+}
+.vellum {
+  background-image: url('http://www.tutorialchip.com/wp-content/uploads/2011/07/Old-Paper-Texture-520x346.jpg');
+  background-size: cover;
+}
+.purple-paper {
+  background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/01/Blue-Purple-Construction-Paper-Texture..jpg');
+  background-size: cover;
+}
+.graph-paper {
+  background-image: url('http://media.istockphoto.com/vectors/graph-paper-cyan-color-seamless-pattern-vector-id496414378?k=6&m=496414378&s=170667a&w=0&h=SNHVKOWnPuJA8m5P3mu8qN3LIEy4U5M828UdpQt28Zo=');
+}
+.blackboard {
+  background-image: url('http://www.sketchuptextureclub.com/public/texture_m/0001-blackboard-texture-seamless.jpg');
+}

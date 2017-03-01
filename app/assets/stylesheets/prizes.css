@@ -1,4 +1,4 @@
-#prize-store button, #settings button {
+#prize-store button, #settings button, #trophies button {
   background-color: #CEAA78;
   color: #342613;
   float: none;
@@ -9,7 +9,7 @@
   transition: background 1s, color 1s;
   width: 16vw; }
   @media only screen and (max-width: 1600px) and (orientation: portrait) {
-    #prize-store button, #settings button {
+    #prize-store button, #settings button, #trophies button {
       font-size: 4vh;
       width: 18vw; } }
 
@@ -17,14 +17,14 @@
   background: #342613;
   color: #e9d9c3; }
 
-#prize-store h1, #settings h1 {
+#prize-store h1, #settings h1, #trophies h1 {
   color: #CEAA78;
   font-family: "Dancing Script", cursive;
   font-size: 8vh;
   margin-top: 2vh;
   text-align: center; }
   @media only screen and (max-width: 1600px) and (orientation: portrait) {
-    #prize-store h1, #settings h1 {
+    #prize-store h1, #settings h1, #trophies h1 {
       font-size: 8vw;
       margin-top: 1vh; } }
 

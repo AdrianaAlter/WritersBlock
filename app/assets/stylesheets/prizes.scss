@@ -3,7 +3,7 @@ $darkbronze: darken($bronze, 50%);
 $darkdarkbronze: darken($darkbronze, 10%);
 @import "variables";
 
-#prize-store button, #settings button {
+#prize-store button, #settings button, #trophies button {
   background-color: $bronze;
   color: $darkbronze;
   float: none;
@@ -22,7 +22,7 @@ $darkdarkbronze: darken($darkbronze, 10%);
   background: $darkbronze;
   color: $lightbronze;
 }
-#prize-store h1, #settings h1 {
+#prize-store h1, #settings h1, #trophies h1 {
   color: $bronze;
   font-family: $font;
   font-size: 8vh;

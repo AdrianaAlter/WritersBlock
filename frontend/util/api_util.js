@@ -3,6 +3,7 @@ var UserActions = require('../actions/user_actions.js');
 var ProjectActions = require('../actions/project_actions.js');
 var PrizeActions = require('../actions/prize_actions.js');
 var PurchaseActions = require('../actions/purchase_actions.js');
+var TrophyActions = require('../actions/trophy_actions.js');
 
 ApiUtil = {
 
@@ -67,12 +68,29 @@ ApiUtil = {
     });
   },
 
+  winTrophy: function(id, trophy){
+    $.ajax({
+      type: "PATCH",
+      url: "/api/users/" + id,
+      data: {trophy: trophy},
+      dataType: "json",
+      success: function(user){
+        UserActions.singleUserReceived(user);
+        SessionActions.currentUserReceived(user);
+      },
+      error: function(){
+        console.log('Error in ApiUtil winTrophy');
+      }
+    });
+  },
+
   fetchCurrentUser: function (completion) {
     $.ajax({
         type: "GET",
         url: "/api/session",
         dataType: "json",
         success: function (currentUser) {
+          debugger
           SessionActions.currentUserReceived(currentUser);
           UserActions.singleUserReceived(currentUser);
           PurchaseActions.allPurchasesReceived(currentUser.prizes);
@@ -216,8 +234,21 @@ ApiUtil = {
         console.log('Error in ApiUtil fetchAllPrizes');
       }
     });
-  }
+  },
 
+  fetchAllTrophies: function(){
+    $.ajax({
+      type: "GET",
+      url: "/api/trophies",
+      dataType: "json",
+      success: function(trophies){
+        TrophyActions.allTrophiesReceived(trophies);
+      },
+      error: function(trophies){
+        console.log('Error in ApiUtil fetchAllTrophies');
+      }
+    });
+  }
 
 };
 

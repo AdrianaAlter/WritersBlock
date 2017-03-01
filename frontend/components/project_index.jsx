@@ -18,7 +18,21 @@ var ProjectIndex = React.createClass({
     this.listener.remove();
   },
 
+  checkTrophy(){
+    var trophyNums = {
+      1: "one",
+      5: "five",
+      10: "ten",
+    }
+    
+      // if (Object.keys.includes(this.props.user.projects.length + 1)){
+      //
+      // }
+  },
+
+
   _onChange: function(){
+    this.checkTrophy();
     this.setState({ projects: ProjectStore.all() });
   },
 

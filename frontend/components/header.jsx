@@ -6,6 +6,7 @@ var Link = require('react-router').Link;
 var LogOutButton = require('./log_out_button.jsx');
 var SettingIndex = require('./setting_index.jsx');
 var PrizeIndex = require('./prize_index.jsx');
+var TrophyIndex = require('./trophy_index.jsx');
 var NewProjectForm = require('./new_project_form.jsx');
 
 var Header = React.createClass({
@@ -42,9 +43,10 @@ var Header = React.createClass({
         <nav>
           <button id="point-count">{this.state.user.points}</button>
           <Link to="/"><button>{projectIcon}</button></Link>
-          <NewProjectForm mobile={mobile}/>
+          <NewProjectForm mobile={mobile} user={this.state.user}/>
           <PrizeIndex user={this.state.user} mobile={mobile}/>
           <SettingIndex user={this.state.user} mobile={mobile}/>
+
           <LogOutButton mobile={mobile}/>
         </nav>
       </header>
@@ -55,3 +57,4 @@ var Header = React.createClass({
 });
 
 module.exports = Header;
+// <TrophyIndex mobile={mobile}/>

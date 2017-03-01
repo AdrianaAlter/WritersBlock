@@ -42,7 +42,7 @@ var NewProjectForm = React.createClass({
     var createContent = this.props.mobile ? <i className="fa fa-check" aria-hidden="true"></i> : "Create";
     var cancelContent = this.props.mobile ? <i className="fa fa-times" aria-hidden="true"></i> : "Cancel";
     var button = <button onClick={this.toggle}>{buttonContent}</button>
-    var hidden = this.state.formHidden ? "hidden" : "";
+    var hidden = this.props.mobile && this.state.formHidden ? "hidden" : "";
     var form = <form id="project-form" className={hidden}>
       <h1>New Project</h1>
       <input id="project-input" type="text" placeholder="Project Title" onChange={this.updateTitle}></input>

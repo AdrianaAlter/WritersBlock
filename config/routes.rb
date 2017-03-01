@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :users
     resources :projects
     resources :prizes
+    resources :trophies
   end
   match "*path" => "static_pages#root", via: [:get, :post]
 end

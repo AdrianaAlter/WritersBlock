@@ -251,3 +251,7 @@ bag2 = Prize.create({name: 'bag2', category: 'paper', price: 10})
 pink_flecked = Prize.create({name: 'pink-flecked', category: 'paper', price: 10})
 peach_flecked = Prize.create({name: 'peach-flecked', category: 'paper', price: 10})
 red_flecked = Prize.create({name: 'red-flecked', category: 'paper', price: 10})
+
+one_project = Trophy.create({trophy_name: "1 project", won: false})
+five_projects = Trophy.create({trophy_name: "5 projects", won: false})
+ten_projects = Trophy.create({trophy_name: "10 projects", won: false})

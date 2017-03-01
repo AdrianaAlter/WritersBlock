@@ -24,6 +24,9 @@ class Api::UsersController < ApplicationController
       new_used = @user.used.push(params[:setting]).uniq
       @user.update(settings: new_settings)
       @user.update(used: new_used)
+    elsif params[:trophy]
+      new_trophies = @user.trophies.push(params[:trophy])
+      @user.update(trophies: new_trophies)
     end
     @prizes = @user.prizes
     render :show

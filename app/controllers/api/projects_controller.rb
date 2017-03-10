@@ -11,7 +11,7 @@ class Api::ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new(title: params[:title], user_id: current_user.id, count: 0)
+    @project = Project.new(title: params[:title], rate: params[:rate], user_id: current_user.id, count: 0)
     if @project.save
       render :index
     end

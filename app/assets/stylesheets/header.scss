@@ -82,6 +82,20 @@ header {
 #project-input {
   flex-basis: 20%;
 }
+h3 {
+  font-size: 3vh;
+  font-family: $cursive;
+  color: $blue;
+}
+select {
+  width: 20%;
+  font-size: 4vh;
+  font-family: $serif;
+  background: $lightbronze;
+  color: $blue;
+  border-radius: 2%;
+  cursor: pointer;
+}
 #form-button {
   overflow: visible;
 }

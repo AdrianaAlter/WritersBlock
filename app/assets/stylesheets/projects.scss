@@ -105,6 +105,16 @@
       display: none;
     }
   }
+  h2 {
+    color: $lightbronze;
+    background: $darkfilter;
+    font-family: $cursive;
+    font-weight: normal;
+    padding: .5vh .25vh;
+    @media #{$phone}{
+      display: none;
+    }
+  }
   #holder{
     background-color: $blue;
     border-radius: 2%;

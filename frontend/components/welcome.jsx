@@ -1,6 +1,7 @@
 var React = require('react');
 var LogInForm = require('./log_in_form.jsx');
 var SignUpForm = require('./sign_up_form.jsx');
+var GuestForm = require('./guest_form.jsx');
 
 var Welcome = React.createClass({
 
@@ -10,6 +11,7 @@ var Welcome = React.createClass({
               <h1>Writer's Block</h1>
               <section className="welcome-buttons group">
                 <LogInForm />
+                <GuestForm />
                 <SignUpForm />
               </section>
             </div>

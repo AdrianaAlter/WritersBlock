@@ -9,6 +9,7 @@ var ProjectIndexItem = React.createClass({
         <li>
           <h2>{this.props.project.title}</h2>
           <h3>{this.props.project.count}</h3>
+          <h3>{this.props.project.rate}</h3>
         </li>
       </Link>
     )

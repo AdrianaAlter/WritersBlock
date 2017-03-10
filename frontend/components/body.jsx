@@ -19,8 +19,12 @@ var Body = React.createClass({
     ApiUtil.editProject(this.props.id, this.state.text, this.state.count);
   },
 
+  edit: function(){
+
+  },
+
   checkPoints: function(e){
-    if ((this.state.count > 0) && ((this.state.count % 10) === 0)){
+    if ((this.state.count > 0) && ((this.state.count % this.props.rate) === 0)){
       ApiUtil.adjustPoints(this.props.userId, 1);
     }
   },

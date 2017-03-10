@@ -67,6 +67,20 @@ header {
 #project-input {
   flex-basis: 20%; }
 
+h3 {
+  font-size: 3vh;
+  font-family: "Oregano", cursive;
+  color: #133359; }
+
+select {
+  width: 20%;
+  font-size: 4vh;
+  font-family: "Vesper Libre", serif;
+  background: #e9d9c3;
+  color: #133359;
+  border-radius: 2%;
+  cursor: pointer; }
+
 #form-button {
   overflow: visible; }
 

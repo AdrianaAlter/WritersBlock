@@ -92,6 +92,15 @@
     @media only screen and (max-width: 1600px) and (orientation: portrait) {
       #detail h1 {
         display: none; } }
+  #detail h2 {
+    color: #e9d9c3;
+    background: rgba(52, 38, 19, 0.5);
+    font-family: "Oregano", cursive;
+    font-weight: normal;
+    padding: .5vh .25vh; }
+    @media only screen and (max-width: 1600px) and (orientation: portrait) {
+      #detail h2 {
+        display: none; } }
   #detail #holder {
     background-color: #133359;
     border-radius: 2%;

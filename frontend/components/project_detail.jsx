@@ -42,8 +42,8 @@ var ProjectDetail = React.createClass({
     }
     return (
       <div id="detail" className={background + " group"}>
-        <h1>{this.state.project.title}</h1>
-        <Body text={this.state.project.body} color={color} frame={frame} paper={paper} fontFamily={fontFamily} id={this.state.project.id} userId={this.state.project.user_id} count={this.state.project.count} delete={this.delete} />
+        <h2>{this.state.project.title}:  {this.state.project.rate} words per point</h2>
+        <Body text={this.state.project.body} rate={this.state.project.rate} color={color} frame={frame} paper={paper} fontFamily={fontFamily} id={this.state.project.id} userId={this.state.project.user_id} count={this.state.project.count} delete={this.delete} />
       </div>
     )
   }

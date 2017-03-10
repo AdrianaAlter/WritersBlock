@@ -1,1 +1,1 @@
-json.array! @projects, :title, :body, :id, :user_id, :count
+json.array! @projects, :title, :body, :id, :user_id, :count, :rate

@@ -90,7 +90,6 @@ ApiUtil = {
         url: "/api/session",
         dataType: "json",
         success: function (currentUser) {
-          debugger
           SessionActions.currentUserReceived(currentUser);
           UserActions.singleUserReceived(currentUser);
           PurchaseActions.allPurchasesReceived(currentUser.prizes);
@@ -177,12 +176,12 @@ ApiUtil = {
     })
   },
 
-  createProject: function(title){
+  createProject: function(title, rate){
     $.ajax({
       type: "POST",
       url: "/api/projects",
       dataType: "json",
-      data: {title: title},
+      data: {title: title, rate: rate},
       success: function(projects){
         ProjectActions.allProjectsReceived(projects);
       },

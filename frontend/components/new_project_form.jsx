@@ -5,15 +5,19 @@ var Modal = require('react-modal');
 var NewProjectForm = React.createClass({
 
   getInitialState: function(){
-    return { title: "", modalIsOpen: false, formHidden: true };
+    return { title: "", rate: "", modalIsOpen: false, formHidden: true };
   },
 
   updateTitle: function(e){
     this.setState({title: e.currentTarget.value});
   },
 
+  updateRate: function(e){
+    this.setState({rate: e.currentTarget.value});
+  },
+
   submit: function(){
-    ApiUtil.createProject(this.state.title);
+    ApiUtil.createProject(this.state.title, this.state.rate);
     this.toggle;
   },
 
@@ -43,9 +47,14 @@ var NewProjectForm = React.createClass({
     var cancelContent = this.props.mobile ? <i className="fa fa-times" aria-hidden="true"></i> : "Cancel";
     var button = <button onClick={this.toggle}>{buttonContent}</button>
     var hidden = this.props.mobile && this.state.formHidden ? "hidden" : "";
+    var self = this;
+    var rateSelect = [5, 10, 25, 50, 100].map(function(num){
+      return <option key={num} value={num}>{num}</option>
+    });
     var form = <form id="project-form" className={hidden}>
       <h1>New Project</h1>
       <input id="project-input" type="text" placeholder="Project Title" onChange={this.updateTitle}></input>
+      <h3>Words per Point: <select onClick={this.updateRate}>{rateSelect}</select></h3>
       <section className="welcome-buttons">
         <button onClick={this.submit} className="left">{createContent}</button>
         <button onClick={this.toggle}>{cancelContent}</button>

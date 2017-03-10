@@ -7,9 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.all[0].destroy
+User.all[1].destroy if User.all[1]
 Prize.destroy_all
 
 user1 = User.create({user_name: 'Sennacy the Greater', password: 'sennacy', points: 9999})
+user2 = User.create({user_name: 'Guest', password: 'guest', points: 0})
 
 project1 = Project.create({title: 'Project1', body: '', user_id: user1.id, count: 0})
 project2 = Project.create({title: 'Project2', body: '', user_id: user1.id, count: 0})

@@ -1,0 +1,67 @@
+@import "variables";
+
+footer {
+  background: $darkbronze;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 1vw;
+  display: flex;
+  justify-content: space-between;
+  button {
+    float: left;
+    height: 3vh;
+    font-size: 1vw;
+    background: transparent;
+    color: $lightbronze;
+    padding: 0 1vw;
+    &:hover {
+      background: $filter;
+    }
+  }
+
+
+
+
+}
+
+.footer-content {
+
+  h2 {
+    text-align: center;
+    display: block;
+    font-size: 4vh;
+    font-weight: normal;
+    font-family: $cursive;
+  }
+  h3 {
+    color: $darkbronze;
+    display: block;
+    font-family: $serif;
+    margin-bottom: 1vh;
+    font-size: 3vh;
+    font-weight: normal;
+  }
+  h4 {
+    @extend h3;
+    text-align: center;
+  }
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+.xout {
+  width: 5vh;
+  padding: 0;
+  background: $blue;
+  border-radius: 50%;
+  height: 5vh;
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  i {
+    display: block;
+    margin: auto;
+  }
+}

@@ -46,7 +46,6 @@ var Header = React.createClass({
           <NewProjectForm mobile={mobile} user={this.state.user}/>
           <PrizeIndex user={this.state.user} mobile={mobile}/>
           <SettingIndex user={this.state.user} mobile={mobile}/>
-
           <LogOutButton mobile={mobile}/>
         </nav>
       </header>

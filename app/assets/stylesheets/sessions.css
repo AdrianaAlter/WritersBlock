@@ -78,7 +78,8 @@ form {
   height: 100%;
   margin: 0 auto;
   padding: 5vh;
-  width: 66%; }
+  width: 66%;
+  position: relative; }
   @media only screen and (max-width: 1600px) and (orientation: portrait) {
     form {
       width: 100%; } }

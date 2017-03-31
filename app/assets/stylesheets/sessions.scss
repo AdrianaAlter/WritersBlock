@@ -89,6 +89,7 @@ form {
   margin: 0 auto;
   padding: 5vh;
   width: 66%;
+  position: relative;
   @media #{$phone} {
     width: 100%;
   }

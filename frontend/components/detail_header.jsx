@@ -23,10 +23,8 @@ var DetailHeader = React.createClass({
   },
   render: function(){
     var component;
-    var self = this;
     var rateSelect = [5, 10, 25, 50, 100].map(function(num){
-      var sel = num == self.props.rate ? "selected" : "";
-      return <option key={num} selected={sel} value={num}>{num}</option>
+      return <option key={num} value={num}>{num}</option>
     });
     if (this.state.view == "header") {
       component =  <h2 onClick={this.toggle}>{this.state.title}:  {this.state.rate} words per point</h2>
@@ -34,7 +32,7 @@ var DetailHeader = React.createClass({
     else {
       component = <section>
                       <input value={this.state.title} onChange={this.updateTitle}></input>
-                      <select onClick={this.updateRate}>{rateSelect}</select>
+                      <select defaultValue={this.state.rate} onClick={this.updateRate}>{rateSelect}</select>
                       <button onClick={this.submit}>Save</button>
                       <button onClick={this.toggle}>Cancel</button>
                   </section>

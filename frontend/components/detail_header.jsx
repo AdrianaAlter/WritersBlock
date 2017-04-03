@@ -4,6 +4,7 @@ var DetailHeader = React.createClass({
   getInitialState: function(){
     return { view: "header", title: this.props.title, rate: this.props.rate };
   },
+
   toggle: function(){
     this.state.view == "header" ? this.setState({ view: "form" }) : this.setState({ view: "header" });
   },
@@ -28,7 +29,7 @@ var DetailHeader = React.createClass({
       return <option key={num} selected={sel} value={num}>{num}</option>
     });
     if (this.state.view == "header") {
-      component =  <h2 onClick={this.toggle}>{this.props.title}:  {this.props.rate} words per point</h2>
+      component =  <h2 onClick={this.toggle}>{this.state.title}:  {this.state.rate} words per point</h2>
     }
     else {
       component = <section>

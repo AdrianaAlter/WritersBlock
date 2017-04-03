@@ -19,7 +19,8 @@ class Api::ProjectsController < ApplicationController
 
   def update
     @project = Project.find(params[:id])
-    @project.update(body: params[:body], count: params[:count])
+    # @project.update(body: params[:body], count: params[:count])
+    @project.update(project_params)
     render :show
   end
 
@@ -29,5 +30,9 @@ class Api::ProjectsController < ApplicationController
     @projects = current_user.projects
     render :index
   end
+  private
 
+  def project_params
+    params.require(:project).permit(:title, :rate, :body, :count)
+  end
 end

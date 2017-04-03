@@ -191,11 +191,11 @@ ApiUtil = {
     });
   },
 
-  editProject: function(id, body, count){
+  editProject: function(id, project){
     $.ajax({
       type: "PATCH",
       url: "/api/projects/" + id,
-      data: {body: body, count: count},
+      data: {project: project},
       dataType: "json",
       success: function(project){
         ProjectActions.singleProjectReceived(project);

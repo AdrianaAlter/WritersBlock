@@ -16,7 +16,10 @@ var Body = React.createClass({
   },
 
   save: function(){
-    ApiUtil.editProject(this.props.id, this.state.text, this.state.count);
+    var project = {};
+    project.body = this.state.text;
+    project.count = this.state.count;
+    ApiUtil.editProject(this.props.id, project);
   },
 
   edit: function(){

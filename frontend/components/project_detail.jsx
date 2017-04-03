@@ -4,6 +4,7 @@ var SessionStore = require('../stores/session_store.js');
 var UserStore = require('../stores/user_store.js');
 var ApiUtil = require('../util/api_util.js');
 var Body = require('./body.jsx');
+var DetailHeader = require('./detail_header.jsx');
 
 var ProjectDetail = React.createClass({
   contextTypes: {
@@ -42,7 +43,7 @@ var ProjectDetail = React.createClass({
     }
     return (
       <div id="detail" className={background + " group"}>
-        <h2>{this.state.project.title}:  {this.state.project.rate} words per point</h2>
+        <DetailHeader title={this.state.project.title} rate={this.state.project.rate} id={this.props.params.project_id} />
         <Body text={this.state.project.body} rate={this.state.project.rate} color={color} frame={frame} paper={paper} fontFamily={fontFamily} id={this.state.project.id} userId={this.state.project.user_id} count={this.state.project.count} delete={this.delete} />
       </div>
     )

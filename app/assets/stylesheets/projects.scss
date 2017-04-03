@@ -111,8 +111,34 @@
     font-family: $cursive;
     font-weight: normal;
     padding: .5vh .25vh;
+    cursor: pointer;
     @media #{$phone}{
       display: none;
+    }
+  }
+  section:first-of-type {
+    background: $darkfilter;
+    display: flex;
+      input {
+        flex: 1;
+        border-left: .1vw solid $darkbronze;
+        border-right: .1vw solid $darkbronze;
+        color: $darkbronze;
+        background: $lightbronze;
+        font-size: 3vh;
+        padding-left: 1vw;
+        font-family: $cursive;
+        margin-right: .5vw;
+      }
+      select {
+        flex: .5;
+        @extend input;
+      }
+
+    button {
+      height: 8vh;
+      flex: .25;
+      margin: 0 .2vw;
     }
   }
   #holder{
@@ -191,6 +217,7 @@
       }
       section {
         font-size: 8vh;
+        background: transparent;
         margin: 25% auto 20vh auto;
         overflow-y: hidden;
         text-align: center;

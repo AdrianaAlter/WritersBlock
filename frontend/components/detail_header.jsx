@@ -30,7 +30,7 @@ var DetailHeader = React.createClass({
       component =  <h2 onClick={this.toggle}>{this.state.title}:  {this.state.rate} words per point</h2>
     }
     else {
-      component = <section>
+      component = <section id="edit-header">
                       <input value={this.state.title} onChange={this.updateTitle}></input>
                       <select defaultValue={this.state.rate} onClick={this.updateRate}>{rateSelect}</select>
                       <button onClick={this.submit}>Save</button>

@@ -94,6 +94,8 @@
         display: none; } }
   #detail h2 {
     color: #e9d9c3;
+    height: 6vh;
+    padding: 0;
     background: rgba(52, 38, 19, 0.5);
     font-family: "Oregano", cursive;
     font-weight: normal;
@@ -102,10 +104,11 @@
     @media only screen and (max-width: 1600px) and (orientation: portrait) {
       #detail h2 {
         display: none; } }
-  #detail section:first-of-type {
+  #detail #edit-header {
     background: rgba(52, 38, 19, 0.5);
+    height: 6vh;
     display: flex; }
-    #detail section:first-of-type input, #detail section:first-of-type select {
+    #detail #edit-header input, #detail #edit-header select {
       flex: 1;
       border-left: 0.1vw solid #342613;
       border-right: 0.1vw solid #342613;
@@ -114,11 +117,12 @@
       font-size: 3vh;
       padding-left: 1vw;
       font-family: "Oregano", cursive;
-      margin-right: .5vw; }
-    #detail section:first-of-type select {
+      margin-right: .5vw;
+      height: 100%; }
+    #detail #edit-header select {
       flex: .5; }
-    #detail section:first-of-type button {
-      height: 8vh;
+    #detail #edit-header button {
+      height: 100%;
       flex: .25;
       margin: 0 .2vw; }
   #detail #holder {
